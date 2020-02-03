@@ -1,0 +1,41 @@
+@mixin list-default {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin wrap-mobile {
+  max-width: 767px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin wrap-tablet {
+  max-width: 1023px;
+  margin: 0 auto;
+  padding: 0 110px;
+}
+
+@mixin wrap-desktop {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+@mixin title-desktop {
+  font-family: $montserrat;
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: 800;
+  color: #2d383f;
+}
+
+@mixin title-tablet {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+@mixin title-mobile {
+  font-size: 22px;
+  line-height: 27px;
+}
