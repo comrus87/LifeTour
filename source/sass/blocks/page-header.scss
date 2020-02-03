@@ -1,0 +1,85 @@
+.page-header {
+  @include wrap-desktop;
+  background-color: #0266C1;
+  padding: 42px 121px 0  122px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 22px;
+    width: 62px;
+  }
+
+  &__title {
+    font-family: $montserrat;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 28px;
+    color: $white-color;
+    margin: 0;
+    width: 125px;
+  }
+
+  &__title span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    display: block;
+  }
+
+  &__nav-list {
+    @include list-default;
+    display: flex;
+    width: 54.9%;
+    margin-right: 18px;
+    margin-top: 7px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-right: 10px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__item a {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: $white-color;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  &__phone {
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 19px;
+    color: $white-color;
+    width: 152px;
+    margin-top: 7px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+}
