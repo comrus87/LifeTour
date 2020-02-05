@@ -1,0 +1,227 @@
+.intro {
+  background: url("../img/main-back-desktop.jpg") no-repeat center;
+  background-size: cover;
+  background-color: #376690;
+  margin-top: -110px;
+
+  &__wrap {
+    @include wrap-desktop;
+    padding-top: 257px;
+    padding-bottom: 127px;
+  }
+
+  &__decoration-text {
+    margin: 0;
+    font-family: $montserrat;
+    font-weight: 900;
+    font-size: 93px;
+    line-height: 93px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #f5f9fc;
+    opacity: 0.2;
+  }
+
+  &__title {
+    font-family: $montserrat;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 45px;
+    color: $white-color;
+    margin: -52px 0 0 0;
+  }
+
+  &__description {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    color: $white-color;
+    margin: 14px 0 0 2px;
+    width: 468px;
+  }
+
+  &__link {
+    display: block;
+    background-color: $blue-color;
+    width: 246px;
+    font-family: $montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: $white-color;
+    text-align: center;
+    cursor: pointer;
+    padding: 16px 0 17px;
+    margin-top: 40px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    @include list-default;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 114px;
+    margin-right: 4px;
+  }
+
+  &__social-list li {
+    margin-right: 17.04px;
+  }
+
+  &__social-list li:last-child {
+    margin-right: 0;
+  }
+
+  &__social-link {
+    display: block;
+    width: 21.3px;
+    height: 21.3px;
+    background: rgba(2, 102, 193, 0.43);
+    text-align: center;
+    padding-top: 2px;
+  }
+}
+
+
+@media (max-width: $desktop-width) {
+  .intro {
+    margin-top: calc(-110/1440 * 100vw);
+
+    &__wrap {
+      padding-top: calc(257/1440 * 100vw);
+      padding-bottom: calc(127/1440 * 100vw);
+    }
+
+    &__decoration-text {
+      font-size: calc(93/1440 * 100vw);
+      line-height: calc(93/1440 * 100vw);
+    }
+
+    &__title {
+      font-size: calc(45/1440 * 100vw);
+      line-height: calc(45/1440 * 100vw);
+      margin: calc(-52/1440 * 100vw) 0 0 0;
+    }
+
+    &__description {
+      font-size: calc(19/1440 * 100vw);
+      line-height: calc(28/1440 * 100vw);
+      margin: calc(14/1440 * 100vw) 0 0 calc(2/1440 * 100vw);
+      width: calc(468/1440 * 100vw);
+    }
+
+    &__link {
+      width: calc(246/1440 * 100vw);
+      font-size: calc(16/1440 * 100vw);
+      line-height: calc(25/1440 * 100vw);
+      padding: calc(16/1440 * 100vw) 0 calc(17/1440 * 100vw);
+      margin-top: calc(40/1440 * 100vw);
+    }
+
+    &__social-list {
+      margin-top: calc(114/1440 * 100vw);
+      margin-right: calc(4/1440 * 100vw);
+    }
+
+    &__social-list li {
+      margin-right: calc(17.04/1440 * 100vw);
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .intro {
+    background: url("../img/main-back-tablet.jpg") no-repeat center;
+    background-size: cover;
+    margin-top: -78px;
+
+    &__wrap {
+      @include wrap-tablet;
+      padding-top: 176px;
+      padding-bottom: 92px;
+    }
+
+    &__decoration-text {
+      font-size: 69px;
+      line-height: 69px;
+    }
+
+    &__title {
+      font-size: 35px;
+      line-height: 43px;
+      margin: -45px 0 0 0;
+      width: 300px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 14px 0 0 0;
+      width: 394px;
+    }
+
+    &__link {
+      width: 191px;
+      font-size: 14px;
+      line-height: 22px;
+      padding: 13px 0;
+      margin-top: 27px;
+    }
+
+    &__social-list {
+      margin-top: 90px;
+      margin-right: 0;
+    }
+
+    &__social-list li {
+      margin-right: 17.04px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .intro {
+    background: url("../img/main-back-mobile.jpg") no-repeat center;
+    background-size: cover;
+    margin-top: -66px;
+
+    &__wrap {
+      @include wrap-mobile;
+      padding-top: 145px;
+      padding-bottom: 90px;
+    }
+
+    &__decoration-text {
+      font-size: 41px;
+      line-height: 41px;
+    }
+
+    &__title {
+      font-size: 27px;
+      line-height: 33px;
+      margin: -35px 0 0 0;
+      width: 232px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 21px;
+      margin: 9px 0 0 0;
+      width: 76%;
+    }
+
+    &__link {
+      margin-top: 23px;
+    }
+
+    &__social-list {
+      display: none;
+    }
+  }
+}

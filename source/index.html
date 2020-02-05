@@ -10,9 +10,9 @@
 </head>
 <body>
 
-<!--   <div style="display:none">
+  <div style="display:none">
     <include src="build/img/sprite.svg"></include>
-  </div> -->
+  </div>
 
   <header class="page-header">
     <h1 class="visually-hidden"> Фирма LIFETOUR -  организация походов в горы</h1>
@@ -24,8 +24,8 @@
         <span class="page-header__description">Организация походов в горы</span>
       </p>
     </div>
-
-    <ul class="page-header__nav-list no-js">
+    <button class="page-header__nav-button" type="button" aria-label="Меню навигации"> </button>
+    <ul class="page-header__nav-list">
       <li class="page-header__item"><a href="#">Туры</a></li>
       <li class="page-header__item"><a href="#">Обучение</a></li>
       <li class="page-header__item"><a href="#">О нас</a></li>
@@ -33,10 +33,48 @@
       <li class="page-header__item"><a href="#">Фотографии</a></li>
       <li class="page-header__item"><a href="#">Контакты</a></li>
     </ul>
-
     <a class="page-header__phone" href="tel:8-800-725-32-32">8 800 725 32 32</a>
-
   </header>
+
+  <main>
+    <section class="intro">
+      <div class="intro__wrap">
+        <p class="intro__decoration-text">trekking</p>
+        <h2 class="intro__title">Походы в горы России</h2>
+        <p class="intro__description">Профессионально организовываем экскурсии на самые красивые вершины страны</p>
+        <a class="intro__link" href="#">Выбрать экскурсию</a>
+
+        <ul class="intro__social-list">
+          <li>
+            <a class="intro__social-link" href="#">
+              <span class="visually-hidden">Мы Вконтакте</span>
+              <svg class="intro__vk-img" width="12" height="12">
+                <use xlink:href="#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="intro__social-link" href="#">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+              <svg class="intro__facebook-img" width="10.65" height="10.65">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="intro__social-link" href="#">
+              <span class="visually-hidden">Мы в Инстаграмме</span>
+              <svg class="intro__instagram-img" width="13" height="13">
+                <use xlink:href="#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+
 
 
   <script src="js/script.js"></script>
