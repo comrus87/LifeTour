@@ -30,12 +30,49 @@
   color: #2d383f;
 }
 
+@mixin decoration-title-desktop {
+  font-family: $montserrat;
+  font-size: 55px;
+  line-height: 67px;
+  font-weight: 800;
+  color: rgba(45, 56, 63, 0.03);
+}
+
 @mixin title-tablet {
   font-size: 25px;
   line-height: 30px;
 }
 
+@mixin decoration-title-tablet {
+  font-size: 40px;
+  line-height: 49px;
+}
+
 @mixin title-mobile {
   font-size: 22px;
   line-height: 27px;
+}
+
+@mixin decoration-title-mobile {
+  font-size: 30px;
+  line-height: 37px;
+}
+
+@mixin button-slider {
+  display: block;
+  width: 37px;
+  height: 35px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: url("../img/arrow.svg") no-repeat center;
+  background-color: $blue-color;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }

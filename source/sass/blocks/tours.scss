@@ -1,0 +1,420 @@
+.tours {
+  padding-top: 54px;
+  padding-bottom: 106px;
+
+  &__wrap {
+    @include wrap-desktop;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__decoration-title {
+    @include decoration-title-desktop;
+    margin: 0;
+  }
+
+  &__title {
+    @include title-desktop;
+    margin: -48px 0 0 0;
+  }
+
+  &__buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 79px;
+    margin: 34px 2px 43px 0;
+  }
+
+  &__button-previous {
+    @include button-slider;
+  }
+
+  &__button-next {
+    @include button-slider;
+    transform: rotate(180deg);
+  }
+
+  &__list {
+    @include list-default;
+    display: flex;
+    // width: 1197px;
+  }
+
+  &__item {
+    position: relative;
+    width: 385px;
+    min-height: 412px;
+    padding: 206px 21px 20px;
+    margin-right: 21px;
+    margin-bottom: 20px;
+  }
+
+  &__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+ &__item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+ }
+
+ &__description-item {
+    display: flex;
+    align-items: center;
+ }
+
+ &__location {
+    display: block;
+    width: 114.5px;
+    color: $white-color;
+    font-family: $montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: $blue-color;
+    text-align: center;
+    position: relative;
+    padding: 7px 0 6px 12px;
+    margin-right: 32px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 12px;
+      background: url("../img/geolocation.svg") no-repeat center;
+      top: 9px;
+      left: 22px;
+    }
+  }
+
+  &__item-altai .tours__location {
+    &::before {
+      left: 26px;
+    }
+  }
+
+  &__item-adugeya .tours__location {
+    &::before {
+      left: 20px;
+    }
+  }
+
+  &__time-days {
+    color: $white-color;
+    font-family: $montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 35px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      background: url("../img/day.svg") no-repeat center;
+      top: -3px;
+      left: -3px;
+    }
+  }
+
+  &__item-altai .tours__time-days,
+  &__item-adugeya .tours__time-days {
+    margin-right: 25px;
+
+    &::before {
+      left: -5px;
+    }
+  }
+
+  &__time-nights {
+    color: $white-color;
+    font-family: $montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url("../img/moon.svg") no-repeat center;
+      top: -3px;
+      left: 0;
+    }
+  }
+
+  &__title-item {
+    color: $white-color;
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    width: 242px;
+    margin: 23px 0 34px;
+  }
+
+  &__item-adugeya .tours__title-item {
+    margin: 21px 0 36px -2px;
+  }
+
+  &__parameters-title {
+    color: $white-color;
+    font-family: $montserrat;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  &__date,
+  &__counts {
+    color: $white-color;
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 21px;
+  }
+
+  &__rating {
+    display: flex;
+    margin-top: 8px;
+  }
+
+  &__star {
+    display: block;
+    width: 15px;
+    height: 14px;
+    margin-right: 0.7px;
+    background: url("../img/star-empty.svg") no-repeat center;
+  }
+
+   &__star--active {
+    background: url("../img/star-full.svg") no-repeat center;
+   }
+
+   &__parameters {
+    display: flex;
+    position: relative;
+   }
+
+   &__hard-block {
+    margin-right: 44px;
+   }
+
+   &__date-block {
+    margin-right: 50px;
+   }
+
+   &__all-tours-link {
+    color: #2D383F;
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    display: block;
+    margin: 40px auto 0;
+    width: 220px;
+    position: relative;
+    padding-right: 20px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 9px;
+      height: 9px;
+      transform: rotate(45deg);
+      border-right: 2px solid #2D383F;
+      border-top: 2px solid #2D383F;
+      right: 2px;
+      top: 5px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+   }
+
+}
+
+@media (max-width: $desktop-width) {
+  .tours {
+    padding-top: calc(54/1440 * 100vw);
+    padding-bottom: calc(106/1440 * 100vw);
+
+  &__decoration-title {
+    font-size: calc(55/1440 * 100vw);
+    line-height: calc(67/1440 * 100vw);
+  }
+
+  &__title {
+    font-size: calc(35/1440 * 100vw);
+    line-height: calc(43/1440 * 100vw);
+    margin: calc(-48/1440 * 100vw) 0 0 0;
+  }
+
+  &__buttons-container {
+    width: calc(79/1440 * 100vw);
+    margin: calc(34/1440 * 100vw) calc(2/1440 * 100vw) calc(43/1440 * 100vw) 0;
+  }
+
+  &__button-previous {
+    width: calc(37/1440 * 100vw);
+    height: calc(35/1440 * 100vw);
+  }
+
+  &__button-next {
+    width: calc(37/1440 * 100vw);
+    height: calc(35/1440 * 100vw);
+    transform: rotate(180deg);
+  }
+
+  // &__list {
+  //   width: calc(1197/1440 * 100vw);
+  // }
+
+  &__item {
+    width: calc(385/1440 * 100vw);
+    min-height: calc(412/1440 * 100vw);
+    padding: calc(206/1440 * 100vw) calc(21/1440 * 100vw) calc(20/1440 * 100vw);
+    margin-right: calc(21/1440 * 100vw);
+    margin-bottom: calc(20/1440 * 100vw);
+  }
+
+ &__location {
+    width: calc(114.5/1440 * 100vw);
+    font-size: calc(14/1440 * 100vw);
+    line-height: calc(17/1440 * 100vw);
+    padding: calc(7/1440 * 100vw) 0 calc(6/1440 * 100vw) calc(12/1440 * 100vw);
+    margin-right: calc(32/1440 * 100vw);
+
+    &::before {
+      width: calc(9/1440 * 100vw);
+      height: calc(12/1440 * 100vw);
+      top: calc(9/1440 * 100vw);
+      left: calc(22/1440 * 100vw);
+    }
+  }
+
+  &__item-altai .tours__location {
+    &::before {
+      left: calc(26/1440 * 100vw);
+    }
+  }
+
+  &__item-adugeya .tours__location {
+    &::before {
+      left: calc(20/1440 * 100vw);
+    }
+  }
+
+  &__time-days {
+    font-size: calc(12/1440 * 100vw);
+    line-height: calc(15/1440 * 100vw);
+    padding-left: calc(25/1440 * 100vw);
+    margin-right: calc(35/1440 * 100vw);
+
+    &::before {
+      width: calc(22/1440 * 100vw);
+      height: calc(22/1440 * 100vw);
+      top: calc(-3/1440 * 100vw);
+      left: calc(-3/1440 * 100vw);
+    }
+  }
+
+  &__item-altai .tours__time-days,
+  &__item-adugeya .tours__time-days {
+    margin-right: calc(25/1440 * 100vw);
+
+    &::before {
+      left: calc(-5/1440 * 100vw);
+    }
+  }
+
+  &__time-nights {
+    font-size: calc(12/1440 * 100vw);
+    line-height: calc(15/1440 * 100vw);
+    padding-left: calc(25/1440 * 100vw);
+
+    &::before {
+      width: calc(20/1440 * 100vw);
+      height: calc(20/1440 * 100vw);
+      top: calc(-3/1440 * 100vw);
+    }
+  }
+
+    &__title-item {
+      font-size: calc(24/1440 * 100vw);
+      line-height: calc(29/1440 * 100vw);
+      width: calc(242/1440 * 100vw);
+      margin: calc(23/1440 * 100vw) 0 calc(34/1440 * 100vw);
+    }
+
+    &__item-adugeya .tours__title-item {
+      margin: calc(21/1440 * 100vw) 0 calc(36/1440 * 100vw) calc(-2/1440 * 100vw);
+    }
+
+    &__parameters-title {
+      font-size: calc(12/1440 * 100vw);
+      line-height: calc(15/1440 * 100vw);
+      margin-bottom: calc(2/1440 * 100vw);
+    }
+
+    &__date,
+    &__counts {
+      font-size: calc(12/1440 * 100vw);
+      line-height: calc(21/1440 * 100vw);
+    }
+
+    &__rating {
+      margin-top: calc(8/1440 * 100vw);
+    }
+
+    &__star {
+      width: calc(15/1440 * 100vw);
+      height: calc(14/1440 * 100vw);
+      margin-right: calc(0.7/1440 * 100vw);
+    }
+
+   &__hard-block {
+    margin-right: calc(44/1440 * 100vw);
+   }
+
+   &__date-block {
+    margin-right: calc(50/1440 * 100vw);
+   }
+
+   &__all-tours-link {
+    font-size: calc(16/1440 * 100vw);
+    line-height: calc(20/1440 * 100vw);
+    margin: calc(40/1440 * 100vw) auto 0;
+    width: calc(220/1440 * 100vw);
+    padding-right: calc(20/1440 * 100vw);
+
+    &::before {
+      width: calc(9/1440 * 100vw);
+      height: calc(9/1440 * 100vw);
+      border-right: calc(2/1440 * 100vw) solid #2D383F;
+      border-top: calc(2/1440 * 100vw) solid #2D383F;
+      right: calc(2/1440 * 100vw);
+      top: calc(5/1440 * 100vw);
+    }
+   }
+  }
+}
