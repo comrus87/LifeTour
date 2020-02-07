@@ -449,6 +449,7 @@
   &__wrap {
     padding: 0;
     overflow: hidden;
+    max-width: 100%;
   }
 
   &__title-block {
@@ -480,18 +481,20 @@
   }
 
   &__list {
-    width: calc(1200/#{$vw-tablet} * 100vw);
-    // transform: translateX(-406px);
+    width: 100%;
     margin-left: calc(112/#{$vw-tablet} * 100vw);
   }
 
-
   &__item {
-    width: calc(385/#{$vw-tablet} * 100vw);
+    min-width: calc(385/#{$vw-tablet} * 100vw);
     min-height: calc(412/#{$vw-tablet} * 100vw);
     padding: calc(206/#{$vw-tablet} * 100vw) calc(21/#{$vw-tablet} * 100vw) calc(20/#{$vw-tablet} * 100vw);
     margin-right: calc(21/#{$vw-tablet} * 100vw);
     margin-bottom: calc(20/#{$vw-tablet} * 100vw);
+  }
+
+  &__item:nth-child(3n) {
+    margin-right: calc(21/#{$vw-tablet} * 100vw);
   }
 
  &__location {
