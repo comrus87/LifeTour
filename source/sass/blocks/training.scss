@@ -1,0 +1,179 @@
+.training {
+  border-bottom: 1px solid #D9E7EA;
+  margin-bottom: 100px;
+
+  &__wrap {
+    @include wrap-desktop;
+    padding-left: 124px;
+    position: relative;
+  }
+
+  &__decoration-title {
+    @include decoration-title-desktop;
+    margin: 0;
+  }
+
+  &__title {
+    @include title-desktop;
+    margin: -49px 0 25px -2px;
+  }
+
+  &__description {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    width: 68.8%;
+    margin: 0 0 57px;
+  }
+
+  &__title-slider-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title-slider,
+  &__title-process {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    color: #2d383f;
+  }
+
+  &__title-slider {
+    margin-bottom: 34px;
+  }
+
+  &__buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 79px;
+  }
+
+  &__button-previous {
+    @include button-slider;
+  }
+
+  &__button-next {
+    @include button-slider;
+    transform: rotate(180deg);
+  }
+
+  &__slider-list {
+    @include list-default;
+    display: flex;
+  }
+
+  &__slider-item {
+    width: 234px;
+    margin-right: 6px;
+    padding: 14px 15px 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.09);
+  }
+
+  &__slider-item:nth-child(5n) {
+    margin-right: 0;
+  }
+
+  &__item-title-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__buttons-container {
+    margin: -6px 2px 0 0;
+  }
+
+  &__item-title {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    width: 120px;
+    margin: 20px 0 16px 0;
+  }
+
+  &__social-link {
+    display: block;
+    width: 24.66px;
+    height: 24.05px;
+    border: 1px solid #9AC2E6;
+    text-align: center;
+  }
+
+  &__decoration-tablet,
+  &__decoration-mobile {
+    display: none;
+  }
+
+  &__process-list {
+    @include list-default;
+    display: flex;
+  }
+
+  &__process-item {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #2d383f;
+    width: 265px;
+    position: relative;
+    padding-left: 40px;
+  }
+
+  &__process-item-learning {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background: url("../img/map.svg") no-repeat center;
+      left: 0;
+    }
+  }
+
+  &__process-item-preparing {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background: url("../img/boots.svg") no-repeat center;
+      left: 0;
+    }
+  }
+
+  &__process-item-lecture {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      background: url("../img/pine-tree.svg") no-repeat center;
+      left: 0;
+    }
+  }
+
+  &__process-item-interpretation {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background: url("../img/mountain.svg") no-repeat center;
+      left: 0;
+    }
+  }
+
+  &__decoration-desktop {
+    position: absolute;
+    bottom: -7.5px;
+  }
+
+
+
+}

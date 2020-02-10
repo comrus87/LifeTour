@@ -1,6 +1,6 @@
 .tours {
   padding-top: 54px;
-  padding-bottom: 106px;
+  padding-bottom: 89px;
 
   &__wrap {
     @include wrap-desktop;
@@ -275,7 +275,7 @@
 @media (max-width: $desktop-width) {
   .tours {
     padding-top: calc(54/#{$vw-desktop} * 100vw);
-    padding-bottom: calc(106/#{$vw-desktop} * 100vw);
+    padding-bottom: calc(89/#{$vw-desktop} * 100vw);
 
   &__wrap {
     padding: 0 calc(120/#{$vw-desktop} * 100vw);
