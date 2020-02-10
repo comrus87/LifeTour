@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var toursNext = document.querySelector('.tours__button-next');
   var toursPage = document.querySelector('.tours');
   var toursSlidesList = document.querySelector('.tours__list');
-  console.log(toursSlidesList.style);
 
   function switchSlider(step, slides, prev, next) {
     var startIndex = 0;
@@ -45,17 +44,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function switchTabletSlider(slider, slides, prev, next) {
     var acc = 0;
+    var marginRight = getComputedStyle(slides[0]).marginRight;
+    var step = slides[0].offsetWidth + parseInt(marginRight, 10);
 
     next.addEventListener('click', function () {
-      if ((slides.length - 1) * (-406) < acc) {
-        acc += -406;
+      if ((slides.length - 1) * (-step) < acc) {
+        acc += -step;
         slider.style.transform = 'translateX(' + acc + 'px)';
       }
     });
 
     prev.addEventListener('click', function () {
       if (acc < 0) {
-        acc += 406;
+        acc += step;
         slider.style.transform = 'translateX(' + acc + 'px)';
       }
     });
@@ -64,12 +65,15 @@ document.addEventListener('DOMContentLoaded', function () {
   function changeToursSlider() {
     if (window.matchMedia('(min-width: 1024px)').matches) {
       switchSlider(3, toursSlides, toursPrev, toursNext);
-    } else if (window.matchMedia('(max-width: 1023px)').matches) {
+    } else if (window.matchMedia('(min-width: 768px)').matches) {
       switchTabletSlider(toursSlidesList, toursSlides, toursPrev, toursNext);
+    } else if (window.matchMedia('(max-width: 767px)').matches) {
+      switchSlider(1, toursSlides, toursPrev, toursNext);
     }
   }
 
   if (toursPage) {
+    toursSlidesList.classList.remove('no-js');
     changeToursSlider();
     window.addEventListener('resize', changeToursSlider);
   }

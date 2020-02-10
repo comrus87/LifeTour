@@ -266,7 +266,10 @@
       opacity: 0.7;
     }
    }
+}
 
+.no-js {
+  flex-wrap: wrap;
 }
 
 @media (max-width: $desktop-width) {
@@ -690,9 +693,13 @@
   &__item {
     width: 100%;
     min-height: 412px;
-    padding: 160px 8px 20px;
+    padding: 160px 4px 20px 8px;
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  &__item:nth-child(3n) {
+    margin-right: 0;
   }
 
   &__description-item {
@@ -771,7 +778,7 @@
     }
 
     &__item-adugeya .tours__title-item {
-      margin: 0;
+       margin: 23px 0 34px;
     }
 
     &__parameters-title {
@@ -829,208 +836,3 @@
    }
   }
 }
-
-
-// @media (max-width: $mobile-width) {
-//   .tours {
-//     padding-top: calc(46/#{$vw-mobile} * 100vw);
-//     padding-bottom: calc(109/#{$vw-mobile} * 100vw);
-
-//   &__wrap {
-//     @include wrap-mobile;
-//   }
-
-//   &__item-img {
-//     display: none;
-//   }
-
-//   &__item-img-mobile {
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     z-index: -10;
-//     width: 100%;
-//     height: 100%;
-//   }
-
-//   &__title-block {
-//     padding: 0;
-//     margin: 0;
-//     position: relative;
-//   }
-
-//   &__decoration-title {
-//     @include decoration-title-mobile;
-//     position: absolute;
-//     left: 0;
-//     top: calc(-6/#{$vw-mobile} * 100vw);
-//     width: calc(300/#{$vw-mobile} * 100vw);
-//   }
-
-//   &__title {
-//     @include title-mobile;
-//     margin: 0;
-//   }
-
-//   &__title-wrap {
-//     width: 55.7%;
-//   }
-
-//   &__buttons-container {
-//     width: calc(79/#{$vw-mobile} * 100vw);
-//     margin: calc(13/#{$vw-mobile} * 100vw) 0 calc(28/#{$vw-mobile} * 100vw);
-//   }
-
-//   &__button-previous,
-//   &__button-next {
-//     @include button-slider;
-//   }
-
-//   &__list {
-//     width: 100%;
-//     margin-left: 0;
-//   }
-
-//   &__item {
-//     width: 100%;
-//     min-height: calc(412/#{$vw-mobile} * 100vw);
-//     padding: calc(160/#{$vw-mobile} * 100vw) calc(8/#{$vw-mobile} * 100vw) calc(20/#{$vw-mobile} * 100vw);
-//     margin-right: 0;
-//     margin-bottom: calc(20/#{$vw-mobile} * 100vw);
-//   }
-
-//   &__description-item {
-//     flex-wrap: wrap;
-//   }
-
-//   &__location {
-//     width: calc(114.5/#{$vw-mobile} * 100vw);
-//     font-size: calc(14/#{$vw-mobile} * 100vw);
-//     line-height: calc(17/#{$vw-mobile} * 100vw);
-//     padding: calc(7/#{$vw-mobile} * 100vw) 0 calc(6/#{$vw-mobile} * 100vw) calc(12/#{$vw-mobile} * 100vw);
-//     margin-top: calc(31/#{$vw-mobile} * 100vw);
-//     margin-right: 50%;
-//     order: 2;
-
-//     &::before {
-//       width: calc(9/#{$vw-mobile} * 100vw);
-//       height: calc(12/#{$vw-mobile} * 100vw);
-//       top: calc(9/#{$vw-mobile} * 100vw);
-//       left: calc(22/#{$vw-mobile} * 100vw);
-//     }
-//   }
-
-//   &__item-altai .tours__location {
-//     &::before {
-//       left: calc(26/#{$vw-mobile} * 100vw);
-//     }
-//   }
-
-//   &__item-adugeya .tours__location {
-//     &::before {
-//       left: calc(20/#{$vw-mobile} * 100vw);
-//     }
-//   }
-
-//   &__time-days {
-//     font-size: calc(12/#{$vw-mobile} * 100vw);
-//     line-height: calc(15/#{$vw-mobile} * 100vw);
-//     padding-left: calc(29/#{$vw-mobile} * 100vw);
-//     margin-right: calc(34/#{$vw-mobile} * 100vw);
-
-//     &::before {
-//       width: calc(22/#{$vw-mobile} * 100vw);
-//       height: calc(22/#{$vw-mobile} * 100vw);
-//       top: calc(-3/#{$vw-mobile} * 100vw);
-//       left: calc(1/#{$vw-mobile} * 100vw);
-//     }
-//   }
-
-//   &__item-altai .tours__time-days,
-//   &__item-adugeya .tours__time-days {
-//     margin-right: calc(25/#{$vw-mobile} * 100vw);
-
-//     &::before {
-//       left: calc(-5/#{$vw-mobile} * 100vw);
-//     }
-//   }
-
-//   &__time-nights {
-//     font-size: calc(12/#{$vw-mobile} * 100vw);
-//     line-height: calc(15/#{$vw-mobile} * 100vw);
-//     padding-left: calc(25/#{$vw-mobile} * 100vw);
-
-//     &::before {
-//       width: calc(20/#{$vw-mobile} * 100vw);
-//       height: calc(20/#{$vw-mobile} * 100vw);
-//       top: calc(-3/#{$vw-mobile} * 100vw);
-//     }
-//   }
-
-//     &__title-item {
-//       font-size: calc(24/#{$vw-mobile} * 100vw);
-//       line-height: calc(29/#{$vw-mobile} * 100vw);
-//       width: 100%;
-//       margin: calc(23/#{$vw-mobile} * 100vw) 0 calc(34/#{$vw-mobile} * 100vw);
-//     }
-
-//     &__item-adugeya .tours__title-item {
-//       margin: 0;
-//     }
-
-//     &__parameters-title {
-//       font-size: calc(12/#{$vw-mobile} * 100vw);
-//       line-height: calc(15/#{$vw-mobile} * 100vw);
-//       margin-bottom: calc(2/#{$vw-mobile} * 100vw);
-//     }
-
-//     &__parametres {
-//       &::before {
-//         width: calc(79/#{$vw-mobile} * 100vw);
-//         top: calc(-18/#{$vw-mobile} * 100vw);
-//       }
-//     }
-
-//     &__date,
-//     &__counts {
-//       font-size: calc(13/#{$vw-mobile} * 100vw);
-//       line-height: calc(21/#{$vw-mobile} * 100vw);
-//     }
-
-//     &__rating {
-//       margin-top: calc(8/#{$vw-mobile} * 100vw);
-//     }
-
-//     &__star {
-//       width: calc(15/#{$vw-mobile} * 100vw);
-//       height: calc(14/#{$vw-mobile} * 100vw);
-//       margin-right: calc(0.7/#{$vw-mobile} * 100vw);
-//     }
-
-//    &__hard-block {
-//     margin-right: calc(19/#{$vw-mobile} * 100vw);
-//    }
-
-//    &__date-block {
-//     margin-right: calc(18/#{$vw-mobile} * 100vw);
-//    }
-
-//    &__all-tours-link {
-//     font-size: calc(16/#{$vw-mobile} * 100vw);
-//     line-height: calc(20/#{$vw-mobile} * 100vw);
-//     margin: calc(8/#{$vw-mobile} * 100vw) auto;
-//     width: calc(220/#{$vw-mobile} * 100vw);
-//     padding-right: calc(20/#{$vw-mobile} * 100vw);
-
-//     &::before {
-//       width: calc(9/#{$vw-mobile} * 100vw);
-//       height: calc(9/#{$vw-mobile} * 100vw);
-//       border-right: calc(2/#{$vw-mobile} * 100vw) solid #2D383F;
-//       border-top: calc(2/#{$vw-mobile} * 100vw) solid #2D383F;
-//       right: calc(2/#{$vw-mobile} * 100vw);
-//       top: calc(5/#{$vw-mobile} * 100vw);
-//     }
-//    }
-//   }
-// }
