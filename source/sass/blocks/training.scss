@@ -357,6 +357,7 @@
   .training {
     &__wrap {
       padding: 0;
+      overflow: hidden;
     }
 
     &__decoration-title {
@@ -416,7 +417,6 @@
     }
 
     &__slider-list {
-      overflow: hidden;
       padding: 25px 0 25px calc(112/#{$vw-tablet} * 100vw);
     }
 
@@ -638,10 +638,6 @@
     &__decoration-tablet {
       display: none;
     }
-
-    // &__decoration-mobile {
-    //   display: block;
-    // }
 
     &__process-item-learning {
       width: 100%;
