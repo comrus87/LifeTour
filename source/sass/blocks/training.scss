@@ -215,7 +215,7 @@
 @media (max-width: $desktop-width) {
   .training {
     border-bottom: none;
-    margin-bottom: calc(100/#{$vw-desktop} * 100vw);
+    margin-bottom: calc(114/#{$vw-desktop} * 100vw);
 
     &__wrap {
       padding-left: calc(123/#{$vw-desktop} * 100vw);

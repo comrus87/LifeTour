@@ -1,6 +1,33 @@
 .tours {
+  position: relative;
   padding-top: 54px;
   padding-bottom: 89px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 547px;
+    height: 1240px;
+    background: url(../img/tour-clouds-desktop.png) no-repeat center;
+    background-size: cover;
+    right: 0;
+    bottom: -475px;
+    z-index: -50;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 418px;
+    height: 279px;
+    background: url(../img/clouds-tours.png) no-repeat center;
+    background-size: cover;
+    left: 0;
+    bottom: -60px;
+    z-index: -50;
+  }
 
   &__wrap {
     @include wrap-desktop;
@@ -277,6 +304,18 @@
     padding-top: calc(54/#{$vw-desktop} * 100vw);
     padding-bottom: calc(89/#{$vw-desktop} * 100vw);
 
+    &::before {
+      width: calc(547/#{$vw-desktop} * 100vw);
+      height: calc(1240/#{$vw-desktop} * 100vw);
+      bottom: calc(-475/#{$vw-desktop} * 100vw);
+    }
+
+    &::after {
+      width: calc(418/#{$vw-desktop} * 100vw);
+      height: calc(279/#{$vw-desktop} * 100vw);
+      bottom: calc(-60/#{$vw-desktop} * 100vw);
+    }
+
   &__wrap {
     padding: 0 calc(120/#{$vw-desktop} * 100vw);
   }
@@ -448,6 +487,18 @@
   .tours {
     padding-top: calc(68/#{$vw-tablet} * 100vw);
     padding-bottom: calc(120/#{$vw-tablet} * 100vw);
+
+    &::before {
+      width: calc(294/#{$vw-tablet} * 100vw);
+      height: calc(960/#{$vw-tablet} * 100vw);
+      background: url(../img/tour-clouds-tablet.png) no-repeat center;
+      background-size: cover;
+      bottom: calc(-311/#{$vw-tablet} * 100vw);
+    }
+
+    &::after {
+      display: none;
+    }
 
   &__wrap {
     padding: 0;
@@ -633,6 +684,14 @@
   .tours {
     padding-top: 46px;
     padding-bottom: 92px;
+
+    &::before {
+      width: 214px;
+      height: 828px;
+      background: url(../img/tour-clouds-mobile.png) no-repeat center;
+      background-size: cover;
+      bottom: -180px;
+    }
 
   &__wrap {
     @include wrap-mobile;

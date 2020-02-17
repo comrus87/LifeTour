@@ -1,0 +1,165 @@
+.about-us {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 885px;
+    height: 877px;
+    background: url(../img/about-desktop.png) no-repeat center;
+    background-size: cover;
+    left: 0;
+    bottom: -172px;
+    z-index: -50;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 618px;
+    height: 280px;
+    background: url(../img/clouds-about.png) no-repeat center;
+    background-size: cover;
+    right: 0;
+    top: -130px;
+    z-index: -50;
+  }
+
+  &__wrap {
+    @include wrap-desktop;
+    padding-left: 772px;
+    padding-bottom: 100px;
+  }
+
+  &__decoration-title {
+    @include decoration-title-desktop;
+    margin: 0;
+  }
+
+  &__title {
+    @include title-desktop;
+    margin: -47px 0 50px;
+  }
+
+  &__history-title,
+  &__target-title {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0 0 19px 0;
+    color: #2D383F;
+  }
+
+  &__target-title {
+    margin: 56px 0 19px 0;
+  }
+
+  &__history,
+  &__target {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about-us {
+
+    &::before {
+      width: 446px;
+      height: 701px;
+      background: url(../img/about-tablet.png) no-repeat center;
+      background-size: cover;
+      bottom: 26px;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &__wrap {
+      @include wrap-tablet;
+      padding-bottom: 50px;
+      padding-top: 90px;
+    }
+
+    &__decoration-title {
+      @include decoration-title-tablet;
+      margin-left: 269px;
+    }
+
+    &__title {
+      @include title-tablet;
+      margin: -33px 0 42px 269px;
+    }
+
+    &__history-title,
+    &__target-title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__history-title {
+      margin-left: 269px;
+      margin-bottom: 23px;
+    }
+
+    &__target-title {
+      margin: 77px 0 14px;
+    }
+
+    &__history {
+      margin-left: 269px;
+    }
+
+    &__target {
+      width: 98%;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-us {
+
+    &::before {
+      width: 320px;
+      height: 701px;
+      background: url(../img/about-mobile.png) no-repeat center;
+      background-size: cover;
+      top: -220px;
+    }
+
+    &__wrap {
+      @include wrap-mobile;
+      padding-bottom: 50px;
+      padding-top: 329px;
+    }
+
+    &__decoration-title {
+      @include decoration-title-mobile;
+      margin-left: 0;
+    }
+
+    &__title {
+      @include title-mobile;
+      margin: -30px 0 45px;
+    }
+
+    &__history-title {
+      margin-left: 0;
+    }
+
+    &__target-title {
+      margin: 42px 0 19px;
+    }
+
+    &__history {
+      margin-left: 0;
+    }
+  }
+}
