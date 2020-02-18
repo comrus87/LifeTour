@@ -1,0 +1,421 @@
+.reviews {
+  @include wrap-desktop;
+  padding-left: 123px;
+
+  &__title-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+  }
+
+  &__item-title-block {
+    display: flex;
+  }
+
+  &__decoration-title {
+    @include decoration-title-desktop;
+    margin: 0;
+  }
+
+  &__title {
+    @include title-desktop;
+    margin: -48px 0 0 0;
+  }
+
+  &__buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 79px;
+    margin: 30px 0 0;
+  }
+
+  &__button-previous {
+    @include button-slider;
+  }
+
+  &__button-next {
+    @include button-slider;
+    transform: rotate(180deg);
+  }
+
+  &__list {
+    @include list-default;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &__item {
+    width: 389px;
+    min-height: 504px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 46px 36px 30px 36px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.09);
+  }
+
+  &__item-oleinik {
+    padding: 46px 5px 30px 32px;
+  }
+
+  &__item-bazhenova {
+    padding: 40px 10px 30px 43px;
+  }
+
+  &__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &__item-img {
+    margin-right: 17px;
+  }
+
+  &__name-block h3 {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 30px 0 5px 0;
+  }
+
+  &__item-bazhenova h3 {
+    margin: 37px 0 5px 0;
+  }
+
+  &__first-description,
+  &__second-description {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    position: relative;
+  }
+
+  &__first-description {
+    margin: 41px 0 21px 0;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 23px;
+      background: url(../img/top-marks.png) no-repeat center;
+      background-size: cover;
+      top: -7px;
+    }
+  }
+
+   &__item-bazhenova .reviews__first-description {
+    margin: 47px 0 21px 0;
+   }
+
+  &__second-description {
+    display: inline;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 23px;
+      background: url(../img/bottom-marks.png) no-repeat center;
+      background-size: cover;
+      right: -2px;
+      bottom: -13px;
+    }
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .reviews {
+    padding-left: calc(123/#{$vw-desktop} * 100vw);
+    padding-right: calc(120/#{$vw-desktop} * 100vw);
+
+    &__title-block {
+      margin-bottom: calc(34/#{$vw-desktop} * 100vw);
+    }
+
+    &__decoration-title {
+      font-size: calc(55/#{$vw-desktop} * 100vw);
+      line-height: calc(67/#{$vw-desktop} * 100vw);
+    }
+
+    &__title {
+      font-size: calc(35/#{$vw-desktop} * 100vw);
+      line-height: calc(43/#{$vw-desktop} * 100vw);
+      margin: calc(-48/#{$vw-desktop} * 100vw) 0 0 0;
+    }
+
+    &__buttons-container {
+      width: calc(79/#{$vw-desktop} * 100vw);
+      margin: calc(30/#{$vw-desktop} * 100vw) 0 0;
+    }
+
+    &__button-previous,
+    &__button-next {
+      width: calc(37/#{$vw-desktop} * 100vw);
+      height: calc(35/#{$vw-desktop} * 100vw);
+    }
+
+    &__item {
+      width: calc(389/#{$vw-desktop} * 100vw);
+      min-height: calc(504/#{$vw-desktop} * 100vw);
+      margin-right: calc(15/#{$vw-desktop} * 100vw);
+      margin-bottom: calc(15/#{$vw-desktop} * 100vw);
+      padding: calc(46/#{$vw-desktop} * 100vw) calc(36/#{$vw-desktop} * 100vw) calc(30/#{$vw-desktop} * 100vw);
+    }
+
+    &__item-oleinik {
+      padding: calc(46/#{$vw-desktop} * 100vw) calc(5/#{$vw-desktop} * 100vw) calc(30/#{$vw-desktop} * 100vw) calc(32/#{$vw-desktop} * 100vw);
+    }
+
+    &__item-bazhenova {
+      padding: calc(40/#{$vw-desktop} * 100vw) calc(10/#{$vw-desktop} * 100vw) calc(30/#{$vw-desktop} * 100vw) calc(43/#{$vw-desktop} * 100vw);
+    }
+
+    &__item-img {
+      margin-right: calc(17/#{$vw-desktop} * 100vw);
+    }
+
+    &__name-block h3 {
+      margin: calc(30/#{$vw-desktop} * 100vw) 0 calc(5/#{$vw-desktop} * 100vw);
+    }
+
+    &__name-block span,
+    &__name-block h3 {
+      font-size: calc(14/#{$vw-desktop} * 100vw);
+      line-height: calc(19/#{$vw-desktop} * 100vw);
+    }
+
+    &__item-bazhenova h3 {
+      margin: calc(37/#{$vw-desktop} * 100vw) 0 calc(5/#{$vw-desktop} * 100vw);
+    }
+
+    &__first-description,
+    &__second-description {
+      font-size: calc(14/#{$vw-desktop} * 100vw);
+      line-height: calc(23/#{$vw-desktop} * 100vw);
+    }
+
+    &__first-description {
+      margin: calc(41/#{$vw-desktop} * 100vw) 0 calc(21/#{$vw-desktop} * 100vw);
+
+      &:before {
+        width: calc(30/#{$vw-desktop} * 100vw);
+        height: calc(23/#{$vw-desktop} * 100vw);
+        top: calc(-7/#{$vw-desktop} * 100vw);
+      }
+    }
+
+     &__item-bazhenova .reviews__first-description {
+      margin: calc(47/#{$vw-desktop} * 100vw) 0 calc(21/#{$vw-desktop} * 100vw);
+     }
+
+    &__second-description {
+
+      &:after {
+        width: calc(30/#{$vw-desktop} * 100vw);
+        height: calc(23/#{$vw-desktop} * 100vw);
+        right: calc(-2/#{$vw-desktop} * 100vw);
+        bottom: calc(-13/#{$vw-desktop} * 100vw);
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .reviews {
+    padding: 0;
+    overflow: hidden;
+
+    &__title-block {
+      margin-bottom: calc(48/#{$vw-tablet} * 100vw);
+      padding-left: calc(112/#{$vw-tablet} * 100vw);
+      padding-right: calc(110/#{$vw-tablet} * 100vw);
+    }
+
+    &__decoration-title {
+      font-size: calc(40/#{$vw-tablet} * 100vw);
+      line-height: calc(49/#{$vw-tablet} * 100vw);
+    }
+
+    &__title {
+      font-size: calc(25/#{$vw-tablet} * 100vw);
+      line-height: calc(30/#{$vw-tablet} * 100vw);
+      margin: calc(-35/#{$vw-tablet} * 100vw) 0 0 0;
+    }
+
+    &__buttons-container {
+      width: calc(79/#{$vw-tablet} * 100vw);
+      margin: calc(14/#{$vw-tablet} * 100vw) 0 0;
+    }
+
+    &__button-previous,
+    &__button-next {
+      width: calc(37/#{$vw-tablet} * 100vw);
+      height: calc(35/#{$vw-tablet} * 100vw);
+    }
+
+    &__list {
+      width: 100%;
+      margin-left: calc(110/#{$vw-tablet} * 100vw);
+    }
+
+    &__item {
+      min-width: calc(389/#{$vw-tablet} * 100vw);
+      min-height: calc(504/#{$vw-tablet} * 100vw);
+      margin-right: calc(15/#{$vw-tablet} * 100vw);
+      margin-bottom: calc(15/#{$vw-tablet} * 100vw);
+      padding: calc(46/#{$vw-tablet} * 100vw) calc(35/#{$vw-tablet} * 100vw) calc(30/#{$vw-tablet} * 100vw) calc(37/#{$vw-tablet} * 100vw);
+    }
+
+    &__item-oleinik {
+      padding: calc(46/#{$vw-tablet} * 100vw) calc(5/#{$vw-tablet} * 100vw) calc(30/#{$vw-tablet} * 100vw) calc(32/#{$vw-tablet} * 100vw);
+    }
+
+    &__item-bazhenova {
+      padding: calc(40/#{$vw-tablet} * 100vw) calc(10/#{$vw-tablet} * 100vw) calc(30/#{$vw-tablet} * 100vw) calc(43/#{$vw-tablet} * 100vw);
+    }
+
+    &__item-img {
+      margin-right: calc(17/#{$vw-tablet} * 100vw);
+    }
+
+    &__name-block h3 {
+      margin: calc(30/#{$vw-tablet} * 100vw) 0 calc(5/#{$vw-tablet} * 100vw);
+    }
+
+    &__name-block span,
+    &__name-block h3 {
+      font-size: calc(14/#{$vw-tablet} * 100vw);
+      line-height: calc(19/#{$vw-tablet} * 100vw);
+    }
+
+    &__item-bazhenova h3 {
+      margin: calc(37/#{$vw-tablet} * 100vw) 0 calc(5/#{$vw-tablet} * 100vw);
+    }
+
+    &__first-description,
+    &__second-description {
+      font-size: calc(14/#{$vw-tablet} * 100vw);
+      line-height: calc(23/#{$vw-tablet} * 100vw);
+    }
+
+    &__first-description {
+      margin: calc(41/#{$vw-tablet} * 100vw) 0 calc(21/#{$vw-tablet} * 100vw);
+
+      &:before {
+        width: calc(30/#{$vw-tablet} * 100vw);
+        height: calc(23/#{$vw-tablet} * 100vw);
+        top: calc(-7/#{$vw-tablet} * 100vw);
+      }
+    }
+
+     &__item-bazhenova .reviews__first-description {
+      margin: calc(47/#{$vw-tablet} * 100vw) 0 calc(21/#{$vw-tablet} * 100vw);
+     }
+
+    &__second-description {
+
+      &:after {
+        width: calc(30/#{$vw-tablet} * 100vw);
+        height: calc(23/#{$vw-tablet} * 100vw);
+        right: calc(-2/#{$vw-tablet} * 100vw);
+        bottom: calc(-13/#{$vw-tablet} * 100vw);
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+    .reviews {
+      @include wrap-mobile;
+
+    &__title-block {
+      margin-bottom: 31px;
+      padding: 0;
+    }
+
+    &__decoration-title {
+      @include decoration-title-mobile;
+    }
+
+    &__title {
+      @include title-mobile;
+      margin-top: -30px;
+    }
+
+    &__buttons-container {
+      width: 79px;
+      margin-top: 1px;
+    }
+
+    &__button-previous,
+    &__button-next {
+      @include button-slider;
+    }
+
+    &__list {
+      margin-left: 0;
+    }
+
+    &__item {
+      width: 100%;
+      min-height: 535px;
+      margin-right: 0;
+      margin-bottom: 15px;
+      padding: 46px 10px 20px 13px;
+    }
+
+    &__item-oleinik,
+    &__item-bazhenova {
+      padding: 46px 10px 20px 13px;
+    }
+
+    &__item-img {
+      margin-right: 9px;
+    }
+
+    &__name-block h3 {
+      margin: 30px 0 5px;
+    }
+
+    &__name-block span,
+    &__name-block h3 {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    &__item-bazhenova h3 {
+      margin: 30px 0 5px;
+    }
+
+    &__first-description,
+    &__second-description {
+      font-size: 14px;
+      line-height: 23px;
+    }
+
+    &__first-description {
+      margin: 18px 0 21px;
+
+      &:before {
+        width: 30px;
+        height: 23px;
+        top: -7px;
+      }
+    }
+
+     &__item-bazhenova .reviews__first-description {
+      margin: 47px 0 21px;
+     }
+
+    &__second-description {
+
+      &:after {
+        width: 30px;
+        height: 23px;
+        right: -2px;
+        bottom: -13px;
+      }
+    }
+  }
+}
