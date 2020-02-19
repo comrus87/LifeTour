@@ -124,6 +124,10 @@
   }
 }
 
+.no-js {
+  flex-wrap: wrap;
+}
+
 @media (max-width: $desktop-width) {
   .reviews {
     padding-left: calc(123/#{$vw-desktop} * 100vw);
@@ -267,6 +271,10 @@
       padding: calc(46/#{$vw-tablet} * 100vw) calc(35/#{$vw-tablet} * 100vw) calc(30/#{$vw-tablet} * 100vw) calc(37/#{$vw-tablet} * 100vw);
     }
 
+    &__item:nth-child(3n) {
+      margin-right: calc(15/#{$vw-tablet} * 100vw);
+    }
+
     &__item-oleinik {
       padding: calc(46/#{$vw-tablet} * 100vw) calc(5/#{$vw-tablet} * 100vw) calc(30/#{$vw-tablet} * 100vw) calc(32/#{$vw-tablet} * 100vw);
     }
@@ -363,6 +371,10 @@
       margin-right: 0;
       margin-bottom: 15px;
       padding: 46px 10px 20px 13px;
+    }
+
+    &__item:nth-child(3n) {
+      margin-right: 0;
     }
 
     &__item-oleinik,

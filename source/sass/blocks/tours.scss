@@ -295,10 +295,6 @@
    }
 }
 
-.no-js {
-  flex-wrap: wrap;
-}
-
 @media (max-width: $desktop-width) {
   .tours {
     padding-top: calc(54/#{$vw-desktop} * 100vw);

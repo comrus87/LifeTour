@@ -417,6 +417,10 @@
       padding: calc(14/#{$vw-tablet} * 100vw) calc(15/#{$vw-tablet} * 100vw) calc(16/#{$vw-tablet} * 100vw) calc(17/#{$vw-tablet} * 100vw);
     }
 
+    &__slider-item:nth-child(5n) {
+      margin-right: calc(6/#{$vw-tablet} * 100vw);
+    }
+
     &__slider-list {
       padding: 25px 0 25px calc(112/#{$vw-tablet} * 100vw);
     }
@@ -584,6 +588,10 @@
       min-width: 234px;
       margin-right: 6px;
       padding: 14px 15px 16px 17px;
+    }
+
+    &__slider-item:nth-child(5n) {
+      margin-right: 6px;
     }
 
     &__item-img {

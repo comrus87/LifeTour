@@ -12,6 +12,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var instructorsNext = document.querySelector('.training__button-next');
   var instructorsSlidesList = document.querySelector('.training__slider-list');
 
+  var reviewsSlides = document.querySelectorAll('.reviews__item');
+  var reviewsPrev = document.querySelector('.reviews__button-previous');
+  var reviewsNext = document.querySelector('.reviews__button-next');
+  var reviewsSlidesList = document.querySelector('.reviews__list');
+  var reviewsPage = document.querySelector('.reviews');
 
   function switchSlider(step, slides, prev, next) {
     var startIndex = 0;
@@ -85,7 +90,10 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', changeToursSlider);
   }
 
-  function changeInstructorsSlider() {
+
+  // Слайдер инструкторы
+
+  function changeInsSlider() {
     if (window.matchMedia('(min-width: 1024px)').matches) {
       switchSlider(5, instructorsSlides, instructorsPrev, instructorsNext);
     } else if (window.matchMedia('(min-width: 768px)').matches) {
@@ -100,49 +108,63 @@ document.addEventListener('DOMContentLoaded', function () {
     var marginRight = getComputedStyle(slides[0]).marginRight;
     var step = (slides[0].offsetWidth + parseInt(marginRight, 10)) * count;
     var indexSlide = 0;
-    var sub = count === 2 ? 3 : 1;
+    var sub = count === 2 ? 2 : 1;
 
     for (var i = count; i < slides.length; i++) {
       slides[i].style.opacity = '0.2';
     }
 
+    function switchStyle() {
+      slider.style.transform = 'translateX(' + acc + 'px)';
+
+      for (var j = 0; j < slides.length; j++) {
+        slides[j].style.opacity = '0.2';
+      }
+
+      slides[indexSlide].style.opacity = '1';
+      if (count === 2) {
+        slides[indexSlide + 1].style.opacity = '1';
+      }
+    }
+
     next.addEventListener('click', function () {
       if (((slides.length - sub) / count) * (-step) < acc) {
         acc += -step;
-        slider.style.transform = 'translateX(' + acc + 'px)';
-
         indexSlide += count;
-        for (var j = 0; j < slides.length; j++) {
-          slides[j].style.opacity = '0.2';
-          slides[indexSlide].style.opacity = '1';
-          if (count === 2) {
-            slides[indexSlide + 1].style.opacity = '1';
-          }
-        }
+        switchStyle();
       }
     });
 
     prev.addEventListener('click', function () {
       if (acc < 0) {
         acc += step;
-        slider.style.transform = 'translateX(' + acc + 'px)';
-
         indexSlide -= count;
-        for (var j = 0; j < slides.length; j++) {
-          slides[j].style.opacity = '0.2';
-          slides[indexSlide].style.opacity = '1';
-          if (count === 2) {
-            slides[indexSlide + 1].style.opacity = '1';
-          }
-        }
+        switchStyle();
       }
     });
   }
 
-
   if (instructorsSlidesList) {
-    changeInstructorsSlider();
-    window.addEventListener('resize', changeInstructorsSlider);
+    changeInsSlider();
+    window.addEventListener('resize', changeInsSlider);
+  }
+
+  // Слайдер отзывы
+
+  function changeReviewsSlider() {
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+      switchSlider(3, reviewsSlides, reviewsPrev, reviewsNext);
+    } else if (window.matchMedia('(min-width: 768px)').matches) {
+      switchTabletSlider(reviewsSlidesList, reviewsSlides, reviewsPrev, reviewsNext);
+    } else if (window.matchMedia('(max-width: 767px)').matches) {
+      switchSlider(1, reviewsSlides, reviewsPrev, reviewsNext);
+    }
+  }
+
+  if (reviewsPage) {
+    reviewsSlidesList.classList.remove('no-js');
+    changeReviewsSlider();
+    window.addEventListener('resize', changeReviewsSlider);
   }
 
 });
