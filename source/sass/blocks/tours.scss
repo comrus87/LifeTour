@@ -516,12 +516,12 @@
   &__title {
     font-size: calc(25/#{$vw-tablet} * 100vw);
     line-height: calc(30/#{$vw-tablet} * 100vw);
-    margin: calc(-35/#{$vw-tablet} * 100vw) 0 0 0;
+    margin: calc(-35/#{$vw-tablet} * 100vw) 0 0;
   }
 
   &__buttons-container {
     width: calc(79/#{$vw-tablet} * 100vw);
-    margin: calc(12/#{$vw-tablet} * 100vw) 0 calc(54/#{$vw-tablet} * 100vw) 0;
+    margin: calc(12/#{$vw-tablet} * 100vw) 0 calc(54/#{$vw-tablet} * 100vw);
   }
 
   &__button-previous,

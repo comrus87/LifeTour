@@ -196,6 +196,7 @@
 
             </div>
           </li>
+
         </ul>
         <a class="tours__all-tours-link" href="#">Показать все туры</a>
       </div>
@@ -370,8 +371,66 @@
         </li>
       </ul>
     </section>
+    <section class="gallery">
+      <div class="gallery__title-wrap">
+        <div class="gallery__title-block">
+          <p class="gallery__decoration-title">Фотогалерея</p>
+          <h2 class="gallery__title">Фотогалерея</h2>
+          <p class="gallery__description">Добавляйте фото в Instagram с хэштегом <b>#лайфтур</b>, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
+          </p>
+        </div>
 
+        <div class="gallery__buttons-container">
+          <button type="button" class="gallery__button gallery__button-previous" aria-label="Предыдущий слайд"></button>
+          <button type="button" class="gallery__button gallery__button-next" aria-label="Следующий слайд"></button>
+        </div>
+      </div>
+      <ul class="gallery__list">
+        <li class="gallery__item gallery__item-1">
+          <img class="gallery__item-img" src="img/gallery1-desktop.jpg" alt="Путешественник на вершине">
+        </li>
 
+        <li class="gallery__item gallery__item-2">
+          <div class="gallery__top-img-container">
+            <img class="gallery__item-img" src="img/gallery2-desktop.jpg" alt="У костра">
+          </div>
+          <div class="gallery__bottom-img-container">
+            <img class="gallery__item-img" src="img/gallery3-desktop.jpg" alt="Компас">
+          </div>
+        </li>
+
+        <li class="gallery__item gallery__item-3">
+          <img class="gallery__item-img" src="img/gallery4-desktop.jpg" alt="Спуск с горы">
+        </li>
+
+        <li class="gallery__item gallery__item-4">
+          <div class="gallery__top-img-container">
+            <img class="gallery__item-img" src="img/gallery5-desktop.jpg" alt="Альпинисты">
+          </div>
+          <div class="gallery__bottom-img-container">
+            <img class="gallery__item-img" src="img/gallery6-desktop.jpg" alt="Палатка">
+          </div>
+        </li>
+
+        <li class="gallery__item gallery__item-5">
+          <img class="gallery__item-img" src="img/gallery7-desktop.jpg" alt="На природе">
+        </li>
+      </ul>
+    </section>
+
+    <section class="question-form">
+      <div class="question-form__wrap">
+        <h2 class="question-form__title">Остались вопросы?</h2>
+        <p class="question-form__description">Заполните форму <br class="question-form__br">и наш оператор свяжется с вами для консультации.</p>
+        <form method="post" action="#">
+          <label for="form-name" class="visually-hidden">Имя</label>
+          <input class="question-form__input" type="text" id="form-name" placeholder="Как к вам обращаться?" required>
+          <label for="form-phone" class="visually-hidden">Телефон</label>
+          <input class="question-form__input question-form__input-phone" type="tel" id="form-phone" placeholder="Телефон" required>
+          <button class="question-form__button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <script src="js/script.js"></script>
