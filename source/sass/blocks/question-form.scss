@@ -1,11 +1,11 @@
 .question-form {
-  background: url("../img/footer-desktop.jpg") no-repeat center;
+  background: url("../img/footer-desktop.jpg") no-repeat 0 0;
   background-size: cover;
   background-color: #333a19;
 
   &__wrap {
     @include wrap-desktop;
-    padding: 319px 227px 305px;
+    padding: 319px 227px 285px;
   }
 
   &__title {
@@ -95,7 +95,7 @@
 
     &__wrap {
       @include wrap-desktop;
-      padding: calc(319/#{$vw-desktop} * 100vw) calc(227/#{$vw-desktop} * 100vw) calc(305/#{$vw-desktop} * 100vw);
+      padding: calc(319/#{$vw-desktop} * 100vw) calc(227/#{$vw-desktop} * 100vw) calc(285/#{$vw-desktop} * 100vw);
     }
 
     &__title {
@@ -144,34 +144,33 @@
 
     &__wrap {
       @include wrap-tablet;
-      padding: 235px 195px 200px 197px;
+      padding: calc(235/#{$vw-tablet} * 100vw) calc(195/#{$vw-tablet} * 100vw) calc(200/#{$vw-tablet} * 100vw) calc(197/#{$vw-tablet} * 100vw);
     }
 
     &__title {
-      font-size: 25px;
-      line-height: 30px;
-      margin: 0 0 23px;
+      font-size: calc(25/#{$vw-tablet} * 100vw);
+      line-height: calc(30/#{$vw-tablet} * 100vw);
+      margin: 0 0 calc(23/#{$vw-tablet} * 100vw);
     }
 
     &__description {
-      font-size: 16px;
-      line-height: 25px;
-      margin: 0 0 35px;
+      font-size: calc(16/#{$vw-tablet} * 100vw);
+      line-height: calc(25/#{$vw-tablet} * 100vw);
+      margin: 0 0 calc(35/#{$vw-tablet} * 100vw);
       text-align: center;
     }
 
     &__input {
-      font-size: 14px;
-      line-height: 21px;
+      font-size: calc(14/#{$vw-tablet} * 100vw);
+      line-height: calc(21/#{$vw-tablet} * 100vw);
       width: 100%;
-      padding: 15px 0 14px;
-      margin-right: 0;
-      margin-bottom: 7px;
+      padding: calc(15/#{$vw-tablet} * 100vw) 0 calc(14/#{$vw-tablet} * 100vw);
+      margin-bottom: calc(7/#{$vw-tablet} * 100vw);
       text-align: center;
 
       &::placeholder {
-        font-size: 14px;
-        line-height: 21px;
+        font-size: calc(14/#{$vw-tablet} * 100vw);
+        line-height: calc(21/#{$vw-tablet} * 100vw);
       }
     }
 
@@ -181,9 +180,9 @@
 
     &__button {
       width: 100%;
-      font-size: 14px;
-      line-height: 21px;
-      padding: 15px 0 14px;
+      font-size: calc(14/#{$vw-tablet} * 100vw);
+      line-height: calc(21/#{$vw-tablet} * 100vw);
+      padding: calc(15/#{$vw-tablet} * 100vw) 0 calc(14/#{$vw-tablet} * 100vw);
       margin-left: 0;
     }
 
@@ -192,7 +191,7 @@
       flex-direction: column;
       width: 78%;
       margin: 0 auto;
-      padding-left: 27px;
+      padding-left: calc(27/#{$vw-tablet} * 100vw);
     }
   }
 }
@@ -204,16 +203,39 @@
 
     &__wrap {
       @include wrap-mobile;
-      padding: 190px 20px 144px;
+      padding: calc(190/#{$vw-mobile} * 100vw) calc(20/#{$vw-mobile} * 100vw) calc(144/#{$vw-mobile} * 100vw);
     }
 
     &__title {
-      margin: 0 0 17px;
+      font-size: 25px;
+      line-height: 30px;
+      margin: 0 0 calc(17/#{$vw-mobile} * 100vw);
     }
 
     &__description {
-      width: 220px;
-      margin: 0 auto 31px;
+      font-size: 16px;
+      line-height: 25px;
+      width: calc(220/#{$vw-mobile} * 100vw);
+      margin: 0 auto calc(31/#{$vw-mobile} * 100vw);
+    }
+
+    &__input {
+      font-size: 14px;
+      line-height: 21px;
+      padding: 15px 0 14px;
+      margin-bottom: calc(7/#{$vw-mobile} * 100vw);
+
+      &::placeholder {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+
+    &__button {
+      font-size: 14px;
+      line-height: 21px;
+      padding: 15px 0 14px;
+      margin-left: 0;
     }
 
     form {
@@ -226,3 +248,4 @@
     }
   }
 }
+

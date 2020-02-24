@@ -28,8 +28,8 @@
     margin: 0;
   }
 
-  &__title span {
-    font-family: Montserrat;
+  &__description {
+    font-family: $montserrat;
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
@@ -69,7 +69,7 @@
 
   &__phone {
     font-family: $montserrat;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 19px;
     line-height: 19px;
     color: $white-color;
@@ -84,46 +84,46 @@
 
 @media (max-width: $desktop-width) {
   .page-header {
-    padding: calc(42/1440 * 100vw) 121px 0  122px;
+    padding: calc(42/#{$vw-desktop} * 100vw) 121px 0  122px;
 
     &__logo {
-      margin-right: calc(22/1440 * 100vw);
+      margin-right: calc(22/#{$vw-desktop} * 100vw);
     }
 
     &__logo img {
-      width: calc(62/1440 * 100vw);
-      height: calc(62/1440 * 100vw);
+      width: calc(62/#{$vw-desktop} * 100vw);
+      height: calc(62/#{$vw-desktop} * 100vw);
     }
 
     &__title {
-      font-size: calc(23/1440 * 100vw);
-      line-height: calc(28/1440 * 100vw);
+      font-size: calc(23/#{$vw-desktop} * 100vw);
+      line-height: calc(28/#{$vw-desktop} * 100vw);
     }
 
-    &__title span {
-      font-size: calc(8/1440 * 100vw);
-      line-height: calc(10/1440 * 100vw);
+    &__description {
+      font-size: calc(8/#{$vw-desktop} * 100vw);
+      line-height: calc(10/#{$vw-desktop} * 100vw);
     }
 
     &__nav-list {
-      width: calc(657/1440 * 100vw);
-      margin-right: calc(13/1440 * 100vw);
-      margin-top: calc(7/1440 * 100vw);
+      width: calc(657/#{$vw-desktop} * 100vw);
+      margin-right: calc(13/#{$vw-desktop} * 100vw);
+      margin-top: calc(7/#{$vw-desktop} * 100vw);
     }
 
     &__item {
-      margin-right: calc(47/1440 * 100vw);
+      margin-right: calc(47/#{$vw-desktop} * 100vw);
     }
 
     &__item a {
-      font-size: calc(16/1440 * 100vw);
-      line-height: calc(25/1440 * 100vw);
+      font-size: calc(16/#{$vw-desktop} * 100vw);
+      line-height: calc(25/#{$vw-desktop} * 100vw);
     }
 
     &__phone {
-      font-size: calc(19/1440 * 100vw);
-      line-height: calc(19/1440 * 100vw);
-      margin-top: calc(7/1440 * 100vw);
+      font-size: calc(19/#{$vw-desktop} * 100vw);
+      line-height: calc(19/#{$vw-desktop} * 100vw);
+      margin-top: calc(7/#{$vw-desktop} * 100vw);
     }
   }
 }
@@ -182,7 +182,7 @@
       line-height: 20px;
     }
 
-    &__title span {
+    &__description {
       font-size: 6px;
       line-height: 7px;
     }
@@ -227,7 +227,7 @@
       margin-top: -5px;
     }
 
-    &__title span {
+    &__description {
       font-size: 4.4px;
       line-height: 5px;
     }

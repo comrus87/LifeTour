@@ -282,8 +282,8 @@
       width: 9px;
       height: 9px;
       transform: rotate(45deg);
-      border-right: 2px solid #2D383F;
-      border-top: 2px solid #2D383F;
+      border-right: 2px solid $granit-color;
+      border-top: 2px solid $granit-color;
       right: 2px;
       top: 5px;
     }
@@ -470,8 +470,8 @@
     &::before {
       width: calc(9/#{$vw-desktop} * 100vw);
       height: calc(9/#{$vw-desktop} * 100vw);
-      border-right: calc(2/#{$vw-desktop} * 100vw) solid #2D383F;
-      border-top: calc(2/#{$vw-desktop} * 100vw) solid #2D383F;
+      border-right: calc(2/#{$vw-desktop} * 100vw) solid $granit-color;
+      border-top: calc(2/#{$vw-desktop} * 100vw) solid $granit-color;
       right: calc(2/#{$vw-desktop} * 100vw);
       top: calc(5/#{$vw-desktop} * 100vw);
     }
@@ -667,8 +667,8 @@
     &::before {
       width: calc(9/#{$vw-tablet} * 100vw);
       height: calc(9/#{$vw-tablet} * 100vw);
-      border-right: calc(2/#{$vw-tablet} * 100vw) solid #2D383F;
-      border-top: calc(2/#{$vw-tablet} * 100vw) solid #2D383F;
+      border-right: calc(2/#{$vw-tablet} * 100vw) solid $granit-color;
+      border-top: calc(2/#{$vw-tablet} * 100vw) solid $granit-color;
       right: calc(2/#{$vw-tablet} * 100vw);
       top: calc(5/#{$vw-tablet} * 100vw);
     }
@@ -883,8 +883,8 @@
     &::before {
       width: 9px;
       height: 9px;
-      border-right: 2px solid #2D383F;
-      border-top: 2px solid #2D383F;
+      border-right: 2px solid $granit-color;
+      border-top: 2px solid $granit-color;
       right: 2px;
       top: 5px;
     }

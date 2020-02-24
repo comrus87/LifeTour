@@ -1,0 +1,350 @@
+.page-footer {
+  @include wrap-desktop;
+  padding-left: 122px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+
+  &__logo-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-right: 22px;
+  }
+
+  &__title {
+    font-family: $montserrat;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 37px;
+    color:$granit-color;
+    margin: -7px 0 0 0;
+  }
+
+  &__description {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    display: block;
+  }
+
+  &__nav-list {
+    @include list-default;
+    display: flex;
+    width: 657px;
+    margin-right: 13px;
+    margin-top: 7px;
+    flex-wrap: wrap;
+  }
+
+  &__nav-link {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: $granit-color;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  &__nav-list li {
+    margin-right: 47px;
+  }
+
+  &__nav-list li:first-child {
+    margin-left: -2px;
+  }
+
+  &__nav-list li:last-child {
+    margin-right: 0;
+  }
+
+  &__phone {
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 19px;
+    color: $granit-color;
+    margin-top: 7px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    @include list-default;
+    width: 130px;
+    margin: 8px auto;
+  }
+
+  &__social-link {
+    display: block;
+    width: 28.3px;
+    height: 28.3px;
+    background: transparent;
+    text-align: center;
+    border: 1px solid rgba(45, 56, 63, 0.43);
+    padding-top: 5.5px;
+  }
+
+  &__social-list li {
+    margin-right: 22px;
+  }
+
+  &__social-list li:last-child {
+    margin-right: 0;
+  }
+
+  &__privacy {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: $granit-color;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 0 -1px;
+  }
+}
+
+
+@media (max-width: $desktop-width) {
+  .page-footer {
+    padding-left: calc(122/#{$vw-desktop} * 100vw);
+    padding-right: calc(120/#{$vw-desktop} * 100vw);
+    padding-top: calc(10/#{$vw-desktop} * 100vw);
+    padding-bottom: calc(40/#{$vw-desktop} * 100vw);
+
+    &__logo {
+      margin-right: calc(22/#{$vw-desktop} * 100vw);
+    }
+
+    &__logo img {
+      width: calc(62/#{$vw-desktop} * 100vw);
+      height: calc(62/#{$vw-desktop} * 100vw);
+    }
+
+    &__title {
+      font-size: calc(24/#{$vw-desktop} * 100vw);
+      line-height: calc(37/#{$vw-desktop} * 100vw);
+      margin: calc(-7/#{$vw-desktop} * 100vw) 0 0 0;
+    }
+
+    &__description {
+      font-size: calc(8/#{$vw-desktop} * 100vw);
+      line-height: calc(10/#{$vw-desktop} * 100vw);
+    }
+
+    &__nav-list {
+      width: calc(657/#{$vw-desktop} * 100vw);
+      margin-right: calc(13/#{$vw-desktop} * 100vw);
+      margin-top: calc(7/#{$vw-desktop} * 100vw);
+    }
+
+    &__nav-link {
+      font-size: calc(16/#{$vw-desktop} * 100vw);
+      line-height: calc(25/#{$vw-desktop} * 100vw);
+    }
+
+    &__nav-list li {
+      margin-right: calc(47/#{$vw-desktop} * 100vw);
+    }
+
+    &__nav-list li:first-child {
+      margin-left: calc(-2/#{$vw-desktop} * 100vw);
+    }
+
+    &__phone {
+      font-size: calc(19/#{$vw-desktop} * 100vw);
+      line-height: calc(19/#{$vw-desktop} * 100vw);
+      margin-top: calc(7/#{$vw-desktop} * 100vw);
+    }
+
+    &__privacy {
+      font-size: calc(12/#{$vw-desktop} * 100vw);
+      line-height: calc(24/#{$vw-desktop} * 100vw);
+      margin: calc(30/#{$vw-desktop} * 100vw) 0 0 calc(-1/#{$vw-desktop} * 100vw);
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer {
+    @include wrap-tablet;
+    padding: 35px 166px 40px 196px;
+
+    &__phone {
+      display: none;
+    }
+
+    &__logo {
+      margin-right: 21.6px;
+    }
+
+    &__logo img {
+      width: 60.73px;
+      height: 60.73px;
+    }
+
+    &__logo-block {
+      margin-left: -30px;
+    }
+
+    &__title {
+      font-size: 26px;
+      line-height: 36px;
+      margin-top: -5px;
+    }
+
+    &__description {
+      font-size: 8.7px;
+      line-height: 10px;
+    }
+
+    &__top-container {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    &__nav-link {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    &__nav-list {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 25px;
+    }
+
+    &__nav-list li {
+      margin-right: 0;
+      margin-bottom: 8px;
+      width: 33%;
+    }
+
+    &__nav-list li:first-child {
+      margin-left: 0;
+    }
+
+    &__nav-item-tours {
+      order: -6;
+    }
+
+    &__nav-item-training {
+      order: -3;
+    }
+
+    &__nav-item-about {
+      order: -5;
+      padding-left: 25px;
+    }
+
+    &__nav-item-reviews {
+      order: -2;
+      padding-left: 25px;
+    }
+
+    &__nav-item-gallery {
+      order: -4;
+      margin-right: 0;
+      padding-left: 32px;
+    }
+
+    &__nav-item-contacts {
+      order: -1;
+      padding-left: 32px;
+    }
+
+    &__nav-list li:nth-child(3n+8) {
+      padding-left: 25px;
+    }
+
+    &__nav-list li:nth-child(3n+9) {
+      padding-left: 32px;
+    }
+
+    &__privacy {
+      font-size: 12px;
+      line-height: 24px;
+      margin: 30px 0 0 -1px;
+    }
+
+    &__social-list {
+      margin: 43px 0 0 calc(50% - 72px);
+      width: 116.43px;
+    }
+
+    &__social-list li {
+      margin-right: 13.65px;
+    }
+
+    &__social-link {
+      width: 29.71px;
+      height: 29.71px;
+    }
+
+    &__privacy {
+      margin: 13px 0 0 -30px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer {
+    @include wrap-mobile;
+    padding-top: 8px;
+    padding-bottom: 45px;
+
+    &__logo-block {
+      margin-left: 0;
+    }
+
+    &__nav-list {
+      margin-top: 25px;
+    }
+
+    &__nav-item-about,
+    &__nav-item-reviews {
+      padding-left: 13px;
+    }
+
+    &__nav-item-gallery,
+    &__nav-item-contacts {
+      padding-left: 5px;
+    }
+
+    &__nav-list li:nth-child(3n+8) {
+      padding-left: 13px;
+    }
+
+    &__nav-list li:nth-child(3n+9) {
+      padding-left: 5px;
+    }
+
+    &__social-list {
+      margin: 28px 0 0 calc(50% - 59px);
+    }
+
+    &__privacy {
+      margin: 13px 0 0 -2px;
+    }
+
+  }
+}
