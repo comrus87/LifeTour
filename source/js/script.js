@@ -18,6 +18,13 @@ document.addEventListener('DOMContentLoaded', function () {
   var reviewsSlidesList = document.querySelector('.reviews__list');
   var reviewsPage = document.querySelector('.reviews');
 
+  var gallerySlides = document.querySelectorAll('.gallery__item');
+  var galleryPrev = document.querySelector('.gallery__button-previous');
+  var galleryNext = document.querySelector('.gallery__button-next');
+  var gallerySlidesList = document.querySelector('.gallery__list');
+  var galleryPage = document.querySelector('.gallery');
+
+
   function switchSlider(step, slides, prev, next) {
     var startIndex = 0;
     var endIndex = step;
@@ -166,5 +173,30 @@ document.addEventListener('DOMContentLoaded', function () {
     changeReviewsSlider();
     window.addEventListener('resize', changeReviewsSlider);
   }
+
+  // Слайдер фотогалерея
+// gallerySlides, galleryPrev, galleryNext, gallerySlidesList, galleryPage
+
+  function switchGallerySlider(slider, slides, prev, next) {
+    var step = 0;
+    next.addEventListener('click', function () {
+      step -= slider.clientWidth;
+      slider.style.transform = 'translateX(' + step + 'px)';
+       console.log(step);
+    });
+
+    prev.addEventListener('click', function () {
+      if (step < 0) {
+        step += slider.clientWidth;
+        slider.style.transform = 'translateX(' + step + 'px)';
+      }
+
+       console.log(step);
+    });
+
+
+  }
+
+  switchGallerySlider(gallerySlidesList, gallerySlides, galleryPrev, galleryNext);
 
 });

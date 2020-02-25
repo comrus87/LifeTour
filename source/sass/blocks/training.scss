@@ -114,6 +114,11 @@
     border: 1px solid #9AC2E6;
     text-align: center;
     margin: 10px 0 0;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
   }
 
   &__decoration-tablet,

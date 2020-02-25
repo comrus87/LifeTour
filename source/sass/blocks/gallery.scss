@@ -48,11 +48,12 @@
     @include list-default;
     display: flex;
     width: 100%;
+    transition: transform 1s;
   }
 
   &__item {
     display: block;
-    width: 19.1%;
+    min-width: 19.1%;
     margin-right: 0.4%;
     min-height: 449px;
   }
@@ -69,12 +70,13 @@
 
   &__item-2,
   &__item-4 {
-    width: 20.7%;
+    min-width: 20.7%;
     position: relative;
+    margin-right: 0.35%;
   }
 
   &__item-3 {
-    width: 18.9%;
+    min-width: 18.9%;
   }
 
   &__top-img-container {
@@ -122,18 +124,19 @@
     }
 
     &__item {
-      width: calc(275/#{$vw-desktop} * 100vw);
+      min-width: calc(275/#{$vw-desktop} * 100vw);
       margin-right: calc(6/#{$vw-desktop} * 100vw);
       min-height: calc(449/#{$vw-desktop} * 100vw);
     }
 
     &__item-2,
     &__item-4 {
-      width: calc(298/#{$vw-desktop} * 100vw);
+      min-width: calc(298/#{$vw-desktop} * 100vw);
+      margin-right: calc(5/#{$vw-desktop} * 100vw);
     }
 
     &__item-3 {
-      width: calc(272/#{$vw-desktop} * 100vw);
+      min-width: calc(272/#{$vw-desktop} * 100vw);
     }
 
     &__top-img-container {
@@ -189,6 +192,11 @@
     &__item-2,
     &__item-4 {
       min-width: calc(298/#{$vw-tablet} * 100vw);
+      margin-right: calc(5/#{$vw-tablet} * 100vw);
+    }
+
+    &__item:nth-child(5n) {
+      margin-right: calc(6/#{$vw-tablet} * 100vw);
     }
 
     &__item-3 {
@@ -255,10 +263,15 @@
     &__item-2,
     &__item-4 {
       min-width: calc(172/#{$vw-mobile} * 100vw);
+      margin-right: calc(3.5/#{$vw-mobile} * 100vw);
     }
 
     &__item-3 {
       min-width: calc(158/#{$vw-mobile} * 100vw);
+    }
+
+    &__item:nth-child(5n) {
+      margin-right: calc(3.5/#{$vw-mobile} * 100vw);
     }
 
     &__top-img-container {
