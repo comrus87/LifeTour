@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     next.addEventListener('click', function () {
       if ((slides.length - 1) * (-step) < acc) {
-        acc += -step;
+        acc -= step;
         slider.style.transform = 'translateX(' + acc + 'px)';
       }
     });
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (toursPage) {
-    toursSlidesList.classList.remove('no-js');
+    toursSlidesList.classList.remove('tours__list--no-js');
     changeToursSlider();
     window.addEventListener('resize', changeToursSlider);
   }
@@ -129,14 +129,14 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       slides[indexSlide].style.opacity = '1';
-      if (count === 2) {
+      if (count === 2 && slides[indexSlide + 1]) {
         slides[indexSlide + 1].style.opacity = '1';
       }
     }
 
     next.addEventListener('click', function () {
       if (((slides.length - sub) / count) * (-step) < acc) {
-        acc += -step;
+        acc -= step;
         indexSlide += count;
         switchStyle();
       }
@@ -152,6 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (instructorsSlidesList) {
+    instructorsSlidesList.classList.remove('training__slider-list--no-js');
     changeInsSlider();
     window.addEventListener('resize', changeInsSlider);
   }
@@ -169,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (reviewsPage) {
-    reviewsSlidesList.classList.remove('no-js');
+    reviewsSlidesList.classList.remove('reviews__list--no-js');
     changeReviewsSlider();
     window.addEventListener('resize', changeReviewsSlider);
   }

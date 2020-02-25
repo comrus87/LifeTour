@@ -2,11 +2,11 @@
   background: url("../img/main-back-desktop.jpg") no-repeat center;
   background-size: cover;
   background-color: #376690;
-  margin-top: -110px;
+  margin-top: -112px;
 
   &__wrap {
     @include wrap-desktop;
-    padding-top: 257px;
+    padding-top: 259px;
     padding-bottom: 127px;
   }
 
@@ -97,10 +97,10 @@
 
 @media (max-width: $desktop-width) {
   .intro {
-    margin-top: calc(-110/#{$vw-desktop} * 100vw);
+    margin-top: calc(-112/#{$vw-desktop} * 100vw);
 
     &__wrap {
-      padding-top: calc(257/#{$vw-desktop} * 100vw);
+      padding-top: calc(259/#{$vw-desktop} * 100vw);
       padding-bottom: calc(127/#{$vw-desktop} * 100vw);
     }
 

@@ -42,6 +42,7 @@
     @include list-default;
     display: flex;
     flex-wrap: nowrap;
+    transition: transform 0.8s;
   }
 
   &__item {
@@ -122,10 +123,10 @@
       bottom: -13px;
     }
   }
-}
 
-.no-js {
-  flex-wrap: wrap;
+  &__list--no-js {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: $desktop-width) {

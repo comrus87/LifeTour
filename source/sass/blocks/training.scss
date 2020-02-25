@@ -67,11 +67,13 @@
   &__slider-list {
     @include list-default;
     display: flex;
+    transition: transform 0.8s;
   }
 
   &__slider-item {
     width: 234px;
     margin-right: 5px;
+    margin-bottom: 5px;
     padding: 14px 15px 16px 17px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.09);
   }
@@ -216,6 +218,10 @@
   &__br-mobile {
     display: none;
   }
+
+  &__slider-list--no-js {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: $desktop-width) {
@@ -273,6 +279,7 @@
     &__slider-item {
       width: calc(234/#{$vw-desktop} * 100vw);
       margin-right: calc(5/#{$vw-desktop} * 100vw);
+      margin-bottom: calc(5/#{$vw-desktop} * 100vw);
       padding: calc(14/#{$vw-desktop} * 100vw) calc(15/#{$vw-desktop} * 100vw) calc(16/#{$vw-desktop} * 100vw) calc(17/#{$vw-desktop} * 100vw);
     }
 
@@ -419,6 +426,7 @@
     &__slider-item {
       min-width: calc(234/#{$vw-tablet} * 100vw);
       margin-right: calc(6/#{$vw-tablet} * 100vw);
+      margin-bottom: calc(6/#{$vw-tablet} * 100vw);
       padding: calc(14/#{$vw-tablet} * 100vw) calc(15/#{$vw-tablet} * 100vw) calc(16/#{$vw-tablet} * 100vw) calc(17/#{$vw-tablet} * 100vw);
     }
 
@@ -592,6 +600,7 @@
     &__slider-item {
       min-width: 234px;
       margin-right: 6px;
+      margin-bottom: 6px;
       padding: 14px 15px 16px 17px;
     }
 
