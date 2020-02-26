@@ -176,7 +176,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Слайдер фотогалерея
-// gallerySlides, galleryPrev, galleryNext, gallerySlidesList, galleryPage
 
   function switchGallerySlider(slider, slides, prev, next, count) {
     var step = 0;
@@ -197,14 +196,35 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  function switchGalleryTabletSlider(slider, slides, prev, next) {
+    var step = 0;
+    var currentSlide = 1;
+
+    next.addEventListener('click', function () {
+      if (currentSlide < slides.length - 1) {
+        currentSlide++;
+        var marginRight = getComputedStyle(slides[currentSlide]).marginRight;
+        step -= slides[currentSlide].offsetWidth + parseInt(marginRight, 10);
+        slider.style.transform = 'translateX(' + step + 'px)';
+      }
+    });
+
+    prev.addEventListener('click', function () {
+      if (currentSlide > 1) {
+        var marginRight = getComputedStyle(slides[currentSlide]).marginRight;
+        step += slides[currentSlide].offsetWidth + parseInt(marginRight, 10);
+        slider.style.transform = 'translateX(' + step + 'px)';
+        currentSlide--;
+      }
+    });
+  }
+
 
   function changeGallerySlider() {
     if (window.matchMedia('(min-width: 1024px)').matches) {
       switchGallerySlider(gallerySlidesList, gallerySlides, galleryPrev, galleryNext, 5);
-    } else if (window.matchMedia('(min-width: 768px)').matches) {
-      switchGallerySlider(gallerySlidesList, gallerySlides, galleryPrev, galleryNext, 3);
-    } else if (window.matchMedia('(max-width: 767px)').matches) {
-      switchGallerySlider(gallerySlidesList, gallerySlides, galleryPrev, galleryNext, 2);
+    } else if (window.matchMedia('(max-width: 1023px)').matches) {
+      switchGalleryTabletSlider(gallerySlidesList, gallerySlides, galleryPrev, galleryNext);
     }
   }
 
