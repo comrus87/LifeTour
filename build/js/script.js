@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var gallerySlidesList = document.querySelector('.gallery__list');
   var galleryPage = document.querySelector('.gallery');
 
+  var form = document.querySelector('.question-form form');
+  var phone = document.getElementById('form-phone');
 
   function switchSlider(step, slides, prev, next) {
     var startIndex = 0;
@@ -96,7 +98,6 @@ document.addEventListener('DOMContentLoaded', function () {
     changeToursSlider();
     window.addEventListener('resize', changeToursSlider);
   }
-
 
   // Слайдер инструкторы
 
@@ -231,6 +232,20 @@ document.addEventListener('DOMContentLoaded', function () {
   if (galleryPage) {
     changeGallerySlider();
     window.addEventListener('resize', changeGallerySlider);
+  }
+
+
+  // Форма
+
+  if (phone) {
+    IMask(phone, {mask: '+{7}(000)000-00-00'});
+  }
+
+  if (form) {
+    form.addEventListener('submit', function (evt) {
+      evt.preventDefault();
+      form.reset();
+    });
   }
 
 });
