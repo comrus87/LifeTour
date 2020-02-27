@@ -230,10 +230,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (galleryPage) {
+    gallerySlidesList.classList.remove('gallery__list--no-js');
     changeGallerySlider();
     window.addEventListener('resize', changeGallerySlider);
   }
-
 
   // Форма
 
