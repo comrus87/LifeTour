@@ -25,7 +25,7 @@
     font-family: $montserrat;
     font-weight: 400;
     font-size: 16px;
-    line-height:24px;
+    line-height: 24px;
   }
 
   &__buttons-container {
@@ -87,61 +87,60 @@
 
 @media (max-width: $desktop-width) {
   .gallery {
-
     &__title-wrap {
-      padding-top: calc(78/#{$vw-desktop} * 100vw);
-      padding-left: calc(124/#{$vw-desktop} * 100vw);
-      padding-right: calc(120/#{$vw-desktop} * 100vw);
+      padding-top: calc(78 / #{$vw-desktop} * 100vw);
+      padding-left: calc(124 / #{$vw-desktop} * 100vw);
+      padding-right: calc(120 / #{$vw-desktop} * 100vw);
     }
 
     &__decoration-title {
-      font-size: calc(55/#{$vw-desktop} * 100vw);
-      line-height: calc(67/#{$vw-desktop} * 100vw);
+      font-size: calc(55 / #{$vw-desktop} * 100vw);
+      line-height: calc(67 / #{$vw-desktop} * 100vw);
     }
 
     &__title {
-      font-size: calc(35/#{$vw-desktop} * 100vw);
-      line-height: calc(43/#{$vw-desktop} * 100vw);
-      margin: calc(-47/#{$vw-desktop} * 100vw) 0 0;
+      font-size: calc(35 / #{$vw-desktop} * 100vw);
+      line-height: calc(43 / #{$vw-desktop} * 100vw);
+      margin: calc(-47 / #{$vw-desktop} * 100vw) 0 0;
     }
 
     &__description {
-      margin: calc(22/#{$vw-desktop} * 100vw) 0 calc(44/#{$vw-desktop} * 100vw);
-      width: calc(700/#{$vw-desktop} * 100vw);
-      font-size: calc(16/#{$vw-desktop} * 100vw);
-      line-height: calc(24/#{$vw-desktop} * 100vw);
+      margin: calc(22 / #{$vw-desktop} * 100vw) 0 calc(44 / #{$vw-desktop} * 100vw);
+      width: calc(700 / #{$vw-desktop} * 100vw);
+      font-size: calc(16 / #{$vw-desktop} * 100vw);
+      line-height: calc(24 / #{$vw-desktop} * 100vw);
     }
 
     &__buttons-container {
-      width: calc(79/#{$vw-desktop} * 100vw);
-      margin-top: calc(90/#{$vw-desktop} * 100vw);
+      width: calc(79 / #{$vw-desktop} * 100vw);
+      margin-top: calc(90 / #{$vw-desktop} * 100vw);
     }
 
     &__button-previous,
     &__button-next {
-      width: calc(37/#{$vw-desktop} * 100vw);
-      height: calc(35/#{$vw-desktop} * 100vw);
+      width: calc(37 / #{$vw-desktop} * 100vw);
+      height: calc(35 / #{$vw-desktop} * 100vw);
     }
 
     &__item {
-      min-width: calc(275/#{$vw-desktop} * 100vw);
-      margin-right: calc(6/#{$vw-desktop} * 100vw);
-      min-height: calc(449/#{$vw-desktop} * 100vw);
+      min-width: calc(275 / #{$vw-desktop} * 100vw);
+      margin-right: calc(6 / #{$vw-desktop} * 100vw);
+      min-height: calc(449 / #{$vw-desktop} * 100vw);
     }
 
     &__item-2,
     &__item-4 {
-      min-width: calc(298/#{$vw-desktop} * 100vw);
-      margin-right: calc(5/#{$vw-desktop} * 100vw);
+      min-width: calc(298 / #{$vw-desktop} * 100vw);
+      margin-right: calc(5 / #{$vw-desktop} * 100vw);
     }
 
     &__item-3 {
-      min-width: calc(272/#{$vw-desktop} * 100vw);
+      min-width: calc(272 / #{$vw-desktop} * 100vw);
     }
 
     &__top-img-container {
-      min-height: calc(179/#{$vw-desktop} * 100vw);
-      margin-bottom: calc(5/#{$vw-desktop} * 100vw);
+      min-height: calc(179 / #{$vw-desktop} * 100vw);
+      margin-bottom: calc(5 / #{$vw-desktop} * 100vw);
     }
   }
 }
@@ -149,65 +148,64 @@
 @media (max-width: $tablet-width) {
   .gallery {
     &__title-wrap {
-      padding-top: calc(91/#{$vw-tablet} * 100vw);
-      padding-left: calc(110/#{$vw-tablet} * 100vw);
-      padding-right: calc(110/#{$vw-tablet} * 100vw);
+      padding-top: calc(91 / #{$vw-tablet} * 100vw);
+      padding-left: calc(110 / #{$vw-tablet} * 100vw);
+      padding-right: calc(110 / #{$vw-tablet} * 100vw);
     }
 
     &__decoration-title {
-      font-size: calc(40/#{$vw-tablet} * 100vw);
-      line-height: calc(49/#{$vw-tablet} * 100vw);
+      font-size: calc(40 / #{$vw-tablet} * 100vw);
+      line-height: calc(49 / #{$vw-tablet} * 100vw);
     }
 
     &__title {
-      font-size: calc(25/#{$vw-tablet} * 100vw);
-      line-height: calc(30/#{$vw-tablet} * 100vw);
-      margin: calc(-35/#{$vw-tablet} * 100vw) 0 0 0;
+      font-size: calc(25 / #{$vw-tablet} * 100vw);
+      line-height: calc(30 / #{$vw-tablet} * 100vw);
+      margin: calc(-35 / #{$vw-tablet} * 100vw) 0 0;
     }
 
     &__description {
-      margin: calc(26/#{$vw-tablet} * 100vw) 0 calc(35/#{$vw-tablet} * 100vw);
-      width: calc(390/#{$vw-tablet} * 100vw);
-      font-size: calc(14/#{$vw-tablet} * 100vw);
-      line-height: calc(21/#{$vw-tablet} * 100vw);
+      margin: calc(26 / #{$vw-tablet} * 100vw) 0 calc(35 / #{$vw-tablet} * 100vw);
+      width: calc(390 / #{$vw-tablet} * 100vw);
+      font-size: calc(14 / #{$vw-tablet} * 100vw);
+      line-height: calc(21 / #{$vw-tablet} * 100vw);
     }
 
     &__buttons-container {
-      width: calc(79/#{$vw-tablet} * 100vw);
-      margin-top: calc(96/#{$vw-tablet} * 100vw);
+      width: calc(79 / #{$vw-tablet} * 100vw);
+      margin-top: calc(96 / #{$vw-tablet} * 100vw);
     }
 
     &__button-previous,
     &__button-next {
-      width: calc(37/#{$vw-tablet} * 100vw);
-      height: calc(35/#{$vw-tablet} * 100vw);
+      width: calc(37 / #{$vw-tablet} * 100vw);
+      height: calc(35 / #{$vw-tablet} * 100vw);
     }
 
     &__item {
-      min-width: calc(275/#{$vw-tablet} * 100vw);
-      margin-right: calc(6/#{$vw-tablet} * 100vw);
-      min-height: calc(449/#{$vw-tablet} * 100vw);
+      min-width: calc(275 / #{$vw-tablet} * 100vw);
+      margin-right: calc(6 / #{$vw-tablet} * 100vw);
+      min-height: calc(449 / #{$vw-tablet} * 100vw);
     }
 
     &__item-2,
     &__item-4 {
-      min-width: calc(298/#{$vw-tablet} * 100vw);
-      margin-right: calc(5/#{$vw-tablet} * 100vw);
+      min-width: calc(298 / #{$vw-tablet} * 100vw);
+      margin-right: calc(5 / #{$vw-tablet} * 100vw);
     }
 
     &__item:nth-child(5n) {
-      margin-right: calc(6/#{$vw-tablet} * 100vw);
+      margin-right: calc(6 / #{$vw-tablet} * 100vw);
     }
 
     &__item-3 {
-      min-width: calc(272/#{$vw-tablet} * 100vw);
+      min-width: calc(272 / #{$vw-tablet} * 100vw);
     }
 
     &__top-img-container {
-      min-height: calc(179/#{$vw-tablet} * 100vw);
-      margin-bottom: calc(5/#{$vw-tablet} * 100vw);
+      min-height: calc(179 / #{$vw-tablet} * 100vw);
+      margin-bottom: calc(5 / #{$vw-tablet} * 100vw);
     }
-
   }
 }
 
@@ -255,28 +253,28 @@
     }
 
     &__item {
-      min-width: calc(158/#{$vw-mobile} * 100vw);
-      margin-right: calc(3.5/#{$vw-mobile} * 100vw);
-      min-height: calc(259/#{$vw-mobile} * 100vw);
+      min-width: calc(158 / #{$vw-mobile} * 100vw);
+      margin-right: calc(3.5 / #{$vw-mobile} * 100vw);
+      min-height: calc(259 / #{$vw-mobile} * 100vw);
     }
 
     &__item-2,
     &__item-4 {
-      min-width: calc(172/#{$vw-mobile} * 100vw);
-      margin-right: calc(3.5/#{$vw-mobile} * 100vw);
+      min-width: calc(172 / #{$vw-mobile} * 100vw);
+      margin-right: calc(3.5 / #{$vw-mobile} * 100vw);
     }
 
     &__item-3 {
-      min-width: calc(158/#{$vw-mobile} * 100vw);
+      min-width: calc(158 / #{$vw-mobile} * 100vw);
     }
 
     &__item:nth-child(5n) {
-      margin-right: calc(3.5/#{$vw-mobile} * 100vw);
+      margin-right: calc(3.5 / #{$vw-mobile} * 100vw);
     }
 
     &__top-img-container {
-      min-height: calc(103/#{$vw-mobile} * 100vw);
-      margin-bottom: calc(3/#{$vw-mobile} * 100vw);
+      min-height: calc(103 / #{$vw-mobile} * 100vw);
+      margin-bottom: calc(3 / #{$vw-mobile} * 100vw);
     }
   }
 }

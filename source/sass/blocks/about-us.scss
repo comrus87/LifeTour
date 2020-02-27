@@ -7,7 +7,7 @@
     display: block;
     width: 885px;
     height: 877px;
-    background: url(../img/about-desktop.png) no-repeat center;
+    background: url("../img/about-desktop.png") no-repeat center;
     background-size: cover;
     left: 0;
     bottom: -172px;
@@ -20,7 +20,7 @@
     display: block;
     width: 618px;
     height: 280px;
-    background: url(../img/clouds-about.png) no-repeat center;
+    background: url("../img/clouds-about.png") no-repeat center;
     background-size: cover;
     right: 0;
     top: -130px;
@@ -69,48 +69,46 @@
 
 @media (max-width: $desktop-width) {
   .about-us {
-
     &::before {
-      bottom: calc(-172/#{$vw-desktop} * 100vw);
+      bottom: calc(-172 / #{$vw-desktop} * 100vw);
     }
 
     &__decoration-title {
-      font-size: calc(55/#{$vw-desktop} * 100vw);
-      line-height: calc(67/#{$vw-desktop} * 100vw);
+      font-size: calc(55 / #{$vw-desktop} * 100vw);
+      line-height: calc(67 / #{$vw-desktop} * 100vw);
     }
 
     &__title {
-      font-size: calc(35/#{$vw-desktop} * 100vw);
-      line-height: calc(43/#{$vw-desktop} * 100vw);
-      margin: calc(-47/#{$vw-desktop} * 100vw) 0 calc(50/#{$vw-desktop} * 100vw);
+      font-size: calc(35 / #{$vw-desktop} * 100vw);
+      line-height: calc(43 / #{$vw-desktop} * 100vw);
+      margin: calc(-47 / #{$vw-desktop} * 100vw) 0 calc(50/#{$vw-desktop} * 100vw);
     }
 
     &__history-title,
     &__target-title {
-      font-size: calc(21/#{$vw-desktop} * 100vw);
-      line-height: calc(26/#{$vw-desktop} * 100vw);
-      margin: 0 0 calc(19/#{$vw-desktop} * 100vw) 0;
+      font-size: calc(21 / #{$vw-desktop} * 100vw);
+      line-height: calc(26 / #{$vw-desktop} * 100vw);
+      margin: 0 0 calc(19 / #{$vw-desktop} * 100vw) 0;
     }
 
     &__target-title {
-      margin: calc(56/#{$vw-desktop} * 100vw) 0 calc(19/#{$vw-desktop} * 100vw) 0;
+      margin: calc(56 / #{$vw-desktop} * 100vw) 0 calc(19 / #{$vw-desktop} * 100vw) 0;
     }
 
     &__history,
     &__target {
-      font-size: calc(14/#{$vw-desktop} * 100vw);
-      line-height: calc(23/#{$vw-desktop} * 100vw);
+      font-size: calc(14 / #{$vw-desktop} * 100vw);
+      line-height: calc(23 / #{$vw-desktop} * 100vw);
     }
   }
 }
 
 @media (max-width: $tablet-width) {
   .about-us {
-
     &::before {
       width: 446px;
       height: 701px;
-      background: url(../img/about-tablet.png) no-repeat center;
+      background: url("../img/about-tablet.png") no-repeat center;
       background-size: cover;
       top: -66px;
     }
@@ -166,11 +164,10 @@
 
 @media (max-width: $mobile-width) {
   .about-us {
-
     &::before {
       width: 320px;
       height: 701px;
-      background: url(../img/about-mobile.png) no-repeat center;
+      background: url("../img/about-mobile.png") no-repeat center;
       background-size: cover;
       top: -220px;
     }

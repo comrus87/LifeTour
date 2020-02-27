@@ -51,7 +51,7 @@
     margin-right: 15px;
     margin-bottom: 15px;
     padding: 46px 36px 30px 36px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
   }
 
   &__item-oleinik {
@@ -94,30 +94,30 @@
   &__first-description {
     margin: 41px 0 21px 0;
 
-    &:before {
+    &::before {
       position: absolute;
       content: "";
       width: 30px;
       height: 23px;
-      background: url(../img/top-marks.png) no-repeat center;
+      background: url("../img/top-marks.png") no-repeat center;
       background-size: cover;
       top: -7px;
     }
   }
 
-   &__item-bazhenova .reviews__first-description {
+  &__item-bazhenova .reviews__first-description {
     margin: 47px 0 21px 0;
-   }
+  }
 
   &__second-description {
     display: inline;
 
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       width: 30px;
       height: 23px;
-      background: url(../img/bottom-marks.png) no-repeat center;
+      background: url("../img/bottom-marks.png") no-repeat center;
       background-size: cover;
       right: -2px;
       bottom: -13px;
@@ -131,96 +131,95 @@
 
 @media (max-width: $desktop-width) {
   .reviews {
-    padding-left: calc(123/#{$vw-desktop} * 100vw);
-    padding-right: calc(120/#{$vw-desktop} * 100vw);
+    padding-left: calc(123 / #{$vw-desktop} * 100vw);
+    padding-right: calc(120 / #{$vw-desktop} * 100vw);
 
     &__title-block {
-      margin-bottom: calc(34/#{$vw-desktop} * 100vw);
+      margin-bottom: calc(34 / #{$vw-desktop} * 100vw);
     }
 
     &__decoration-title {
-      font-size: calc(55/#{$vw-desktop} * 100vw);
-      line-height: calc(67/#{$vw-desktop} * 100vw);
+      font-size: calc(55 / #{$vw-desktop} * 100vw);
+      line-height: calc(67 / #{$vw-desktop} * 100vw);
     }
 
     &__title {
-      font-size: calc(35/#{$vw-desktop} * 100vw);
-      line-height: calc(43/#{$vw-desktop} * 100vw);
-      margin: calc(-48/#{$vw-desktop} * 100vw) 0 0 0;
+      font-size: calc(35 / #{$vw-desktop} * 100vw);
+      line-height: calc(43 / #{$vw-desktop} * 100vw);
+      margin: calc(-48 / #{$vw-desktop} * 100vw) 0 0;
     }
 
     &__buttons-container {
-      width: calc(79/#{$vw-desktop} * 100vw);
-      margin: calc(30/#{$vw-desktop} * 100vw) 0 0;
+      width: calc(79 / #{$vw-desktop} * 100vw);
+      margin: calc(30 / #{$vw-desktop} * 100vw) 0 0;
     }
 
     &__button-previous,
     &__button-next {
-      width: calc(37/#{$vw-desktop} * 100vw);
-      height: calc(35/#{$vw-desktop} * 100vw);
+      width: calc(37 / #{$vw-desktop} * 100vw);
+      height: calc(35 / #{$vw-desktop} * 100vw);
     }
 
     &__item {
-      width: calc(389/#{$vw-desktop} * 100vw);
-      min-height: calc(504/#{$vw-desktop} * 100vw);
-      margin-right: calc(15/#{$vw-desktop} * 100vw);
-      margin-bottom: calc(15/#{$vw-desktop} * 100vw);
-      padding: calc(46/#{$vw-desktop} * 100vw) calc(36/#{$vw-desktop} * 100vw) calc(30/#{$vw-desktop} * 100vw);
+      width: calc(389 / #{$vw-desktop} * 100vw);
+      min-height: calc(504 / #{$vw-desktop} * 100vw);
+      margin-right: calc(15 / #{$vw-desktop} * 100vw);
+      margin-bottom: calc(15 / #{$vw-desktop} * 100vw);
+      padding: calc(46 / #{$vw-desktop} * 100vw) calc(36 / #{$vw-desktop} * 100vw) calc(30 / #{$vw-desktop} * 100vw);
     }
 
     &__item-oleinik {
-      padding: calc(46/#{$vw-desktop} * 100vw) calc(5/#{$vw-desktop} * 100vw) calc(30/#{$vw-desktop} * 100vw) calc(32/#{$vw-desktop} * 100vw);
+      padding: calc(46 / #{$vw-desktop} * 100vw) calc(5 / #{$vw-desktop} * 100vw) calc(30 / #{$vw-desktop} * 100vw) calc(32 / #{$vw-desktop} * 100vw);
     }
 
     &__item-bazhenova {
-      padding: calc(40/#{$vw-desktop} * 100vw) calc(10/#{$vw-desktop} * 100vw) calc(30/#{$vw-desktop} * 100vw) calc(43/#{$vw-desktop} * 100vw);
+      padding: calc(40 / #{$vw-desktop} * 100vw) calc(10 / #{$vw-desktop} * 100vw) calc(30 / #{$vw-desktop} * 100vw) calc(43 / #{$vw-desktop} * 100vw);
     }
 
     &__item-img {
-      margin-right: calc(17/#{$vw-desktop} * 100vw);
+      margin-right: calc(17 / #{$vw-desktop} * 100vw);
     }
 
     &__name-block h3 {
-      margin: calc(30/#{$vw-desktop} * 100vw) 0 calc(5/#{$vw-desktop} * 100vw);
+      margin: calc(30 / #{$vw-desktop} * 100vw) 0 calc(5 / #{$vw-desktop} * 100vw);
     }
 
     &__name-block span,
     &__name-block h3 {
-      font-size: calc(14/#{$vw-desktop} * 100vw);
-      line-height: calc(19/#{$vw-desktop} * 100vw);
+      font-size: calc(14 / #{$vw-desktop} * 100vw);
+      line-height: calc(19 / #{$vw-desktop} * 100vw);
     }
 
     &__item-bazhenova h3 {
-      margin: calc(37/#{$vw-desktop} * 100vw) 0 calc(5/#{$vw-desktop} * 100vw);
+      margin: calc(37 / #{$vw-desktop} * 100vw) 0 calc(5 / #{$vw-desktop} * 100vw);
     }
 
     &__first-description,
     &__second-description {
-      font-size: calc(14/#{$vw-desktop} * 100vw);
-      line-height: calc(23/#{$vw-desktop} * 100vw);
+      font-size: calc(14 / #{$vw-desktop} * 100vw);
+      line-height: calc(23 / #{$vw-desktop} * 100vw);
     }
 
     &__first-description {
-      margin: calc(41/#{$vw-desktop} * 100vw) 0 calc(21/#{$vw-desktop} * 100vw);
+      margin: calc(41 / #{$vw-desktop} * 100vw) 0 calc(21 / #{$vw-desktop} * 100vw);
 
-      &:before {
-        width: calc(30/#{$vw-desktop} * 100vw);
-        height: calc(23/#{$vw-desktop} * 100vw);
-        top: calc(-7/#{$vw-desktop} * 100vw);
+      &::before {
+        width: calc(30 / #{$vw-desktop} * 100vw);
+        height: calc(23 / #{$vw-desktop} * 100vw);
+        top: calc(-7 / #{$vw-desktop} * 100vw);
       }
     }
 
-     &__item-bazhenova .reviews__first-description {
-      margin: calc(47/#{$vw-desktop} * 100vw) 0 calc(21/#{$vw-desktop} * 100vw);
-     }
+    &__item-bazhenova .reviews__first-description {
+      margin: calc(47 / #{$vw-desktop} * 100vw) 0 calc(21 / #{$vw-desktop} * 100vw);
+    }
 
     &__second-description {
-
-      &:after {
-        width: calc(30/#{$vw-desktop} * 100vw);
-        height: calc(23/#{$vw-desktop} * 100vw);
-        right: calc(-2/#{$vw-desktop} * 100vw);
-        bottom: calc(-13/#{$vw-desktop} * 100vw);
+      &::after {
+        width: calc(30 / #{$vw-desktop} * 100vw);
+        height: calc(23 / #{$vw-desktop} * 100vw);
+        right: calc(-2 / #{$vw-desktop} * 100vw);
+        bottom: calc(-13 / #{$vw-desktop} * 100vw);
       }
     }
   }
@@ -232,111 +231,110 @@
     overflow: hidden;
 
     &__title-block {
-      margin-bottom: calc(48/#{$vw-tablet} * 100vw);
-      padding-left: calc(112/#{$vw-tablet} * 100vw);
-      padding-right: calc(110/#{$vw-tablet} * 100vw);
+      margin-bottom: calc(48 / #{$vw-tablet} * 100vw);
+      padding-left: calc(112 / #{$vw-tablet} * 100vw);
+      padding-right: calc(110 / #{$vw-tablet} * 100vw);
     }
 
     &__decoration-title {
-      font-size: calc(40/#{$vw-tablet} * 100vw);
-      line-height: calc(49/#{$vw-tablet} * 100vw);
+      font-size: calc(40 / #{$vw-tablet} * 100vw);
+      line-height: calc(49 / #{$vw-tablet} * 100vw);
     }
 
     &__title {
-      font-size: calc(25/#{$vw-tablet} * 100vw);
-      line-height: calc(30/#{$vw-tablet} * 100vw);
-      margin: calc(-35/#{$vw-tablet} * 100vw) 0 0 0;
+      font-size: calc(25 / #{$vw-tablet} * 100vw);
+      line-height: calc(30 / #{$vw-tablet} * 100vw);
+      margin: calc(-35 / #{$vw-tablet} * 100vw) 0 0;
     }
 
     &__buttons-container {
-      width: calc(79/#{$vw-tablet} * 100vw);
-      margin: calc(14/#{$vw-tablet} * 100vw) 0 0;
+      width: calc(79 / #{$vw-tablet} * 100vw);
+      margin: calc(14 / #{$vw-tablet} * 100vw) 0 0;
     }
 
     &__button-previous,
     &__button-next {
-      width: calc(37/#{$vw-tablet} * 100vw);
-      height: calc(35/#{$vw-tablet} * 100vw);
+      width: calc(37 / #{$vw-tablet} * 100vw);
+      height: calc(35 / #{$vw-tablet} * 100vw);
     }
 
     &__list {
       width: 100%;
-      margin-left: calc(110/#{$vw-tablet} * 100vw);
+      margin-left: calc(110 / #{$vw-tablet} * 100vw);
     }
 
     &__item {
-      min-width: calc(389/#{$vw-tablet} * 100vw);
-      min-height: calc(504/#{$vw-tablet} * 100vw);
-      margin-right: calc(15/#{$vw-tablet} * 100vw);
-      margin-bottom: calc(15/#{$vw-tablet} * 100vw);
-      padding: calc(46/#{$vw-tablet} * 100vw) calc(35/#{$vw-tablet} * 100vw) calc(30/#{$vw-tablet} * 100vw) calc(37/#{$vw-tablet} * 100vw);
+      min-width: calc(389 / #{$vw-tablet} * 100vw);
+      min-height: calc(504 / #{$vw-tablet} * 100vw);
+      margin-right: calc(15 / #{$vw-tablet} * 100vw);
+      margin-bottom: calc(15 / #{$vw-tablet} * 100vw);
+      padding: calc(46 / #{$vw-tablet} * 100vw) calc(35 / #{$vw-tablet} * 100vw) calc(30 / #{$vw-tablet} * 100vw) calc(37 / #{$vw-tablet} * 100vw);
     }
 
     &__item:nth-child(3n) {
-      margin-right: calc(15/#{$vw-tablet} * 100vw);
+      margin-right: calc(15 / #{$vw-tablet} * 100vw);
     }
 
     &__item-oleinik {
-      padding: calc(46/#{$vw-tablet} * 100vw) calc(5/#{$vw-tablet} * 100vw) calc(30/#{$vw-tablet} * 100vw) calc(32/#{$vw-tablet} * 100vw);
+      padding: calc(46 / #{$vw-tablet} * 100vw) calc(5 / #{$vw-tablet} * 100vw) calc(30 / #{$vw-tablet} * 100vw) calc(32 / #{$vw-tablet} * 100vw);
     }
 
     &__item-bazhenova {
-      padding: calc(40/#{$vw-tablet} * 100vw) calc(10/#{$vw-tablet} * 100vw) calc(30/#{$vw-tablet} * 100vw) calc(43/#{$vw-tablet} * 100vw);
+      padding: calc(40 / #{$vw-tablet} * 100vw) calc(10 / #{$vw-tablet} * 100vw) calc(30 / #{$vw-tablet} * 100vw) calc(43 / #{$vw-tablet} * 100vw);
     }
 
     &__item-img {
-      margin-right: calc(17/#{$vw-tablet} * 100vw);
+      margin-right: calc(17 / #{$vw-tablet} * 100vw);
     }
 
     &__name-block h3 {
-      margin: calc(30/#{$vw-tablet} * 100vw) 0 calc(5/#{$vw-tablet} * 100vw);
+      margin: calc(30 / #{$vw-tablet} * 100vw) 0 calc(5 / #{$vw-tablet} * 100vw);
     }
 
     &__name-block span,
     &__name-block h3 {
-      font-size: calc(14/#{$vw-tablet} * 100vw);
-      line-height: calc(19/#{$vw-tablet} * 100vw);
+      font-size: calc(14 / #{$vw-tablet} * 100vw);
+      line-height: calc(19 / #{$vw-tablet} * 100vw);
     }
 
     &__item-bazhenova h3 {
-      margin: calc(37/#{$vw-tablet} * 100vw) 0 calc(5/#{$vw-tablet} * 100vw);
+      margin: calc(37 / #{$vw-tablet} * 100vw) 0 calc(5 / #{$vw-tablet} * 100vw);
     }
 
     &__first-description,
     &__second-description {
-      font-size: calc(14/#{$vw-tablet} * 100vw);
-      line-height: calc(23/#{$vw-tablet} * 100vw);
+      font-size: calc(14 / #{$vw-tablet} * 100vw);
+      line-height: calc(23 / #{$vw-tablet} * 100vw);
     }
 
     &__first-description {
-      margin: calc(41/#{$vw-tablet} * 100vw) 0 calc(21/#{$vw-tablet} * 100vw);
+      margin: calc(41 / #{$vw-tablet} * 100vw) 0 calc(21 / #{$vw-tablet} * 100vw);
 
-      &:before {
-        width: calc(30/#{$vw-tablet} * 100vw);
-        height: calc(23/#{$vw-tablet} * 100vw);
-        top: calc(-7/#{$vw-tablet} * 100vw);
+      &::before {
+        width: calc(30 / #{$vw-tablet} * 100vw);
+        height: calc(23 / #{$vw-tablet} * 100vw);
+        top: calc(-7 / #{$vw-tablet} * 100vw);
       }
     }
 
-     &__item-bazhenova .reviews__first-description {
-      margin: calc(47/#{$vw-tablet} * 100vw) 0 calc(21/#{$vw-tablet} * 100vw);
-     }
+    &__item-bazhenova .reviews__first-description {
+      margin: calc(47 / #{$vw-tablet} * 100vw) 0 calc(21 / #{$vw-tablet} * 100vw);
+    }
 
     &__second-description {
-
-      &:after {
-        width: calc(30/#{$vw-tablet} * 100vw);
-        height: calc(23/#{$vw-tablet} * 100vw);
-        right: calc(-2/#{$vw-tablet} * 100vw);
-        bottom: calc(-13/#{$vw-tablet} * 100vw);
+      &::after {
+        width: calc(30 / #{$vw-tablet} * 100vw);
+        height: calc(23 / #{$vw-tablet} * 100vw);
+        right: calc(-2 / #{$vw-tablet} * 100vw);
+        bottom: calc(-13 / #{$vw-tablet} * 100vw);
       }
     }
   }
 }
 
 @media (max-width: $mobile-width) {
-    .reviews {
-      @include wrap-mobile;
+  .reviews {
+    @include wrap-mobile;
 
     &__title-block {
       margin-bottom: 31px;
@@ -410,20 +408,19 @@
     &__first-description {
       margin: 18px 0 21px;
 
-      &:before {
+      &::before {
         width: 30px;
         height: 23px;
         top: -7px;
       }
     }
 
-     &__item-bazhenova .reviews__first-description {
+    &__item-bazhenova .reviews__first-description {
       margin: 47px 0 21px;
-     }
+    }
 
     &__second-description {
-
-      &:after {
+      &::after {
         width: 30px;
         height: 23px;
         right: -2px;

@@ -84,46 +84,46 @@
 
 @media (max-width: $desktop-width) {
   .page-header {
-    padding: calc(42/#{$vw-desktop} * 100vw) 121px 0  122px;
+    padding: calc(42 / #{$vw-desktop} * 100vw) 121px 0  122px;
 
     &__logo {
-      margin-right: calc(22/#{$vw-desktop} * 100vw);
+      margin-right: calc(22 / #{$vw-desktop} * 100vw);
     }
 
     &__logo img {
-      width: calc(62/#{$vw-desktop} * 100vw);
-      height: calc(62/#{$vw-desktop} * 100vw);
+      width: calc(62 / #{$vw-desktop} * 100vw);
+      height: calc(62 / #{$vw-desktop} * 100vw);
     }
 
     &__title {
-      font-size: calc(23/#{$vw-desktop} * 100vw);
-      line-height: calc(28/#{$vw-desktop} * 100vw);
+      font-size: calc(23 / #{$vw-desktop} * 100vw);
+      line-height: calc(28 / #{$vw-desktop} * 100vw);
     }
 
     &__description {
-      font-size: calc(8/#{$vw-desktop} * 100vw);
-      line-height: calc(10/#{$vw-desktop} * 100vw);
+      font-size: calc(8 / #{$vw-desktop} * 100vw);
+      line-height: calc(10 / #{$vw-desktop} * 100vw);
     }
 
     &__nav-list {
-      width: calc(657/#{$vw-desktop} * 100vw);
-      margin-right: calc(13/#{$vw-desktop} * 100vw);
-      margin-top: calc(7/#{$vw-desktop} * 100vw);
+      width: calc(657 / #{$vw-desktop} * 100vw);
+      margin-right: calc(13 / #{$vw-desktop} * 100vw);
+      margin-top: calc(7 / #{$vw-desktop} * 100vw);
     }
 
     &__item {
-      margin-right: calc(47/#{$vw-desktop} * 100vw);
+      margin-right: calc(47 / #{$vw-desktop} * 100vw);
     }
 
     &__item a {
-      font-size: calc(16/#{$vw-desktop} * 100vw);
-      line-height: calc(25/#{$vw-desktop} * 100vw);
+      font-size: calc(16 / #{$vw-desktop} * 100vw);
+      line-height: calc(25 / #{$vw-desktop} * 100vw);
     }
 
     &__phone {
-      font-size: calc(19/#{$vw-desktop} * 100vw);
-      line-height: calc(19/#{$vw-desktop} * 100vw);
-      margin-top: calc(7/#{$vw-desktop} * 100vw);
+      font-size: calc(19 / #{$vw-desktop} * 100vw);
+      line-height: calc(19 / #{$vw-desktop} * 100vw);
+      margin-top: calc(7 / #{$vw-desktop} * 100vw);
     }
   }
 }
@@ -134,38 +134,38 @@
     padding: 33px 110px 0;
     flex-wrap: wrap;
 
-  &__nav-list {
-    display: none;
-  }
-
-  &__nav-button {
-    display: block;
-    width: 24px;
-    height: 16px;
-    background: transparent;
-    border: none;
-    border-top: 2px solid $white-color;
-    border-bottom: 2px solid $white-color;
-    position: relative;
-    cursor: pointer;
-    order: -1;
-
-    &:hover,
-    &:focus {
-      opacity: 0.7;
+    &__nav-list {
+      display: none;
     }
 
-    &::after {
-      content: "";
-      position: absolute;
+    &__nav-button {
       display: block;
-      background: $white-color;
-      width: 15px;
-      height: 2px;
-      top: 5px;
-      left: 0;
+      width: 24px;
+      height: 16px;
+      background: transparent;
+      border: none;
+      border-top: 2px solid $white-color;
+      border-bottom: 2px solid $white-color;
+      position: relative;
+      cursor: pointer;
+      order: -1;
+
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: $white-color;
+        width: 15px;
+        height: 2px;
+        top: 5px;
+        left: 0;
+      }
     }
-  }
 
     &__logo {
       margin-right: 13px;

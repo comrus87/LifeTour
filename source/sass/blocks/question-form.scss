@@ -92,47 +92,46 @@
 
 @media (max-width: $desktop-width) {
   .question-form {
-
     &__wrap {
       @include wrap-desktop;
-      padding: calc(319/#{$vw-desktop} * 100vw) calc(227/#{$vw-desktop} * 100vw) calc(285/#{$vw-desktop} * 100vw);
+      padding: calc(319 / #{$vw-desktop} * 100vw) calc(227 / #{$vw-desktop} * 100vw) calc(285 / #{$vw-desktop} * 100vw);
     }
 
     &__title {
-      font-size: calc(35/#{$vw-desktop} * 100vw);
-      line-height: calc(35/#{$vw-desktop} * 100vw);
-      margin: 0 0 calc(14/#{$vw-desktop} * 100vw) calc(5/#{$vw-desktop} * 100vw);
+      font-size: calc(35 / #{$vw-desktop} * 100vw);
+      line-height: calc(35 / #{$vw-desktop} * 100vw);
+      margin: 0 0 calc(14 / #{$vw-desktop} * 100vw) calc(5 / #{$vw-desktop} * 100vw);
     }
 
     &__description {
-      font-size: calc(16/#{$vw-desktop} * 100vw);
-      line-height: calc(24/#{$vw-desktop} * 100vw);
-      margin: 0 0 calc(43/#{$vw-desktop} * 100vw);
+      font-size: calc(16 / #{$vw-desktop} * 100vw);
+      line-height: calc(24 / #{$vw-desktop} * 100vw);
+      margin: 0 0 calc(43 / #{$vw-desktop} * 100vw);
     }
 
     &__input {
-      font-size: calc(16/#{$vw-desktop} * 100vw);
-      line-height: calc(24/#{$vw-desktop} * 100vw);
-      width: calc(354/#{$vw-desktop} * 100vw);
-      padding: calc(22/#{$vw-desktop} * 100vw) 0 calc(18/#{$vw-desktop} * 100vw) calc(31/#{$vw-desktop} * 100vw);
-      margin-right: calc(13/#{$vw-desktop} * 100vw);
+      font-size: calc(16 / #{$vw-desktop} * 100vw);
+      line-height: calc(24 / #{$vw-desktop} * 100vw);
+      width: calc(354 / #{$vw-desktop} * 100vw);
+      padding: calc(22 / #{$vw-desktop} * 100vw) 0 calc(18 / #{$vw-desktop} * 100vw) calc(31 / #{$vw-desktop} * 100vw);
+      margin-right: calc(13 / #{$vw-desktop} * 100vw);
 
       &::placeholder {
-        font-size: calc(16/#{$vw-desktop} * 100vw);
-        line-height: calc(24/#{$vw-desktop} * 100vw);
+        font-size: calc(16 / #{$vw-desktop} * 100vw);
+        line-height: calc(24 / #{$vw-desktop} * 100vw);
       }
     }
 
     &__input-phone {
-      padding-left: calc(38/#{$vw-desktop} * 100vw);
+      padding-left: calc(38 / #{$vw-desktop} * 100vw);
     }
 
     &__button {
-      width: calc(246/#{$vw-desktop} * 100vw);
-      font-size: calc(16/#{$vw-desktop} * 100vw);
-      line-height: calc(24/#{$vw-desktop} * 100vw);
-      padding: calc(22/#{$vw-desktop} * 100vw) 0 calc(18/#{$vw-desktop} * 100vw);
-      margin-left: calc(5/#{$vw-desktop} * 100vw);
+      width: calc(246 / #{$vw-desktop} * 100vw);
+      font-size: calc(16 / #{$vw-desktop} * 100vw);
+      line-height: calc(24 / #{$vw-desktop} * 100vw);
+      padding: calc(22 / #{$vw-desktop} * 100vw) 0 calc(18 / #{$vw-desktop} * 100vw);
+      margin-left: calc(5 / #{$vw-desktop} * 100vw);
     }
   }
 }
@@ -144,33 +143,33 @@
 
     &__wrap {
       @include wrap-tablet;
-      padding: calc(235/#{$vw-tablet} * 100vw) calc(195/#{$vw-tablet} * 100vw) calc(200/#{$vw-tablet} * 100vw) calc(197/#{$vw-tablet} * 100vw);
+      padding: calc(235 / #{$vw-tablet} * 100vw) calc(195 / #{$vw-tablet} * 100vw) calc(200 / #{$vw-tablet} * 100vw) calc(197 / #{$vw-tablet} * 100vw);
     }
 
     &__title {
-      font-size: calc(25/#{$vw-tablet} * 100vw);
-      line-height: calc(30/#{$vw-tablet} * 100vw);
-      margin: 0 0 calc(23/#{$vw-tablet} * 100vw);
+      font-size: calc(25 / #{$vw-tablet} * 100vw);
+      line-height: calc(30 / #{$vw-tablet} * 100vw);
+      margin: 0 0 calc(23 / #{$vw-tablet} * 100vw);
     }
 
     &__description {
-      font-size: calc(16/#{$vw-tablet} * 100vw);
-      line-height: calc(25/#{$vw-tablet} * 100vw);
-      margin: 0 0 calc(35/#{$vw-tablet} * 100vw);
+      font-size: calc(16 / #{$vw-tablet} * 100vw);
+      line-height: calc(25 / #{$vw-tablet} * 100vw);
+      margin: 0 0 calc(35 / #{$vw-tablet} * 100vw);
       text-align: center;
     }
 
     &__input {
-      font-size: calc(14/#{$vw-tablet} * 100vw);
-      line-height: calc(21/#{$vw-tablet} * 100vw);
+      font-size: calc(14 / #{$vw-tablet} * 100vw);
+      line-height: calc(21 / #{$vw-tablet} * 100vw);
       width: 100%;
-      padding: calc(15/#{$vw-tablet} * 100vw) 0 calc(14/#{$vw-tablet} * 100vw);
-      margin-bottom: calc(7/#{$vw-tablet} * 100vw);
+      padding: calc(15 / #{$vw-tablet} * 100vw) 0 calc(14 / #{$vw-tablet} * 100vw);
+      margin-bottom: calc(7 / #{$vw-tablet} * 100vw);
       text-align: center;
 
       &::placeholder {
-        font-size: calc(14/#{$vw-tablet} * 100vw);
-        line-height: calc(21/#{$vw-tablet} * 100vw);
+        font-size: calc(14 / #{$vw-tablet} * 100vw);
+        line-height: calc(21 / #{$vw-tablet} * 100vw);
       }
     }
 
@@ -180,9 +179,9 @@
 
     &__button {
       width: 100%;
-      font-size: calc(14/#{$vw-tablet} * 100vw);
-      line-height: calc(21/#{$vw-tablet} * 100vw);
-      padding: calc(15/#{$vw-tablet} * 100vw) 0 calc(14/#{$vw-tablet} * 100vw);
+      font-size: calc(14 / #{$vw-tablet} * 100vw);
+      line-height: calc(21 / #{$vw-tablet} * 100vw);
+      padding: calc(15 / #{$vw-tablet} * 100vw) 0 calc(14 / #{$vw-tablet} * 100vw);
       margin-left: 0;
     }
 
@@ -191,39 +190,39 @@
       flex-direction: column;
       width: 78%;
       margin: 0 auto;
-      padding-left: calc(27/#{$vw-tablet} * 100vw);
+      padding-left: calc(27 / #{$vw-tablet} * 100vw);
     }
   }
 }
 
 @media (max-width: $mobile-width) {
-    .question-form {
+  .question-form {
     background: url("../img/footer-mobile.jpg") no-repeat 0 20px;
     background-size: cover;
 
     &__wrap {
       @include wrap-mobile;
-      padding: calc(190/#{$vw-mobile} * 100vw) calc(20/#{$vw-mobile} * 100vw) calc(144/#{$vw-mobile} * 100vw);
+      padding: calc(190 / #{$vw-mobile} * 100vw) calc(20 / #{$vw-mobile} * 100vw) calc(144 / #{$vw-mobile} * 100vw);
     }
 
     &__title {
       font-size: 25px;
       line-height: 30px;
-      margin: 0 0 calc(17/#{$vw-mobile} * 100vw);
+      margin: 0 0 calc(17 / #{$vw-mobile} * 100vw);
     }
 
     &__description {
       font-size: 16px;
       line-height: 25px;
-      width: calc(220/#{$vw-mobile} * 100vw);
-      margin: 0 auto calc(31/#{$vw-mobile} * 100vw);
+      width: calc(220 / #{$vw-mobile} * 100vw);
+      margin: 0 auto calc(31 / #{$vw-mobile} * 100vw);
     }
 
     &__input {
       font-size: 14px;
       line-height: 21px;
       padding: 15px 0 14px;
-      margin-bottom: calc(7/#{$vw-mobile} * 100vw);
+      margin-bottom: calc(7 / #{$vw-mobile} * 100vw);
 
       &::placeholder {
         font-size: 14px;
@@ -248,4 +247,3 @@
     }
   }
 }
-

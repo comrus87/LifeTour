@@ -25,7 +25,7 @@
     font-weight: 800;
     font-size: 24px;
     line-height: 37px;
-    color:$granit-color;
+    color: $granit-color;
     margin: -7px 0 0 0;
   }
 
@@ -89,6 +89,7 @@
   &__social-list {
     display: flex;
     @include list-default;
+
     width: 130px;
     margin: 8px auto;
   }
@@ -131,60 +132,60 @@
 
 @media (max-width: $desktop-width) {
   .page-footer {
-    padding-left: calc(122/#{$vw-desktop} * 100vw);
-    padding-right: calc(120/#{$vw-desktop} * 100vw);
-    padding-top: calc(10/#{$vw-desktop} * 100vw);
-    padding-bottom: calc(40/#{$vw-desktop} * 100vw);
+    padding-left: calc(122 / #{$vw-desktop} * 100vw);
+    padding-right: calc(120 / #{$vw-desktop} * 100vw);
+    padding-top: calc(10 / #{$vw-desktop} * 100vw);
+    padding-bottom: calc(40 / #{$vw-desktop} * 100vw);
 
     &__logo {
-      margin-right: calc(22/#{$vw-desktop} * 100vw);
+      margin-right: calc(22 / #{$vw-desktop} * 100vw);
     }
 
     &__logo img {
-      width: calc(62/#{$vw-desktop} * 100vw);
-      height: calc(62/#{$vw-desktop} * 100vw);
+      width: calc(62 / #{$vw-desktop} * 100vw);
+      height: calc(62 / #{$vw-desktop} * 100vw);
     }
 
     &__title {
-      font-size: calc(24/#{$vw-desktop} * 100vw);
-      line-height: calc(37/#{$vw-desktop} * 100vw);
-      margin: calc(-7/#{$vw-desktop} * 100vw) 0 0 0;
+      font-size: calc(24 / #{$vw-desktop} * 100vw);
+      line-height: calc(37 / #{$vw-desktop} * 100vw);
+      margin: calc(-7 / #{$vw-desktop} * 100vw) 0 0;
     }
 
     &__description {
-      font-size: calc(8/#{$vw-desktop} * 100vw);
-      line-height: calc(10/#{$vw-desktop} * 100vw);
+      font-size: calc(8 / #{$vw-desktop} * 100vw);
+      line-height: calc(10 / #{$vw-desktop} * 100vw);
     }
 
     &__nav-list {
-      width: calc(657/#{$vw-desktop} * 100vw);
-      margin-right: calc(13/#{$vw-desktop} * 100vw);
-      margin-top: calc(7/#{$vw-desktop} * 100vw);
+      width: calc(657 / #{$vw-desktop} * 100vw);
+      margin-right: calc(13 / #{$vw-desktop} * 100vw);
+      margin-top: calc(7 / #{$vw-desktop} * 100vw);
     }
 
     &__nav-link {
-      font-size: calc(16/#{$vw-desktop} * 100vw);
-      line-height: calc(25/#{$vw-desktop} * 100vw);
+      font-size: calc(16 / #{$vw-desktop} * 100vw);
+      line-height: calc(25 / #{$vw-desktop} * 100vw);
     }
 
     &__nav-list li {
-      margin-right: calc(47/#{$vw-desktop} * 100vw);
+      margin-right: calc(47 / #{$vw-desktop} * 100vw);
     }
 
     &__nav-list li:first-child {
-      margin-left: calc(-2/#{$vw-desktop} * 100vw);
+      margin-left: calc(-2 / #{$vw-desktop} * 100vw);
     }
 
     &__phone {
-      font-size: calc(19/#{$vw-desktop} * 100vw);
-      line-height: calc(19/#{$vw-desktop} * 100vw);
-      margin-top: calc(7/#{$vw-desktop} * 100vw);
+      font-size: calc(19 / #{$vw-desktop} * 100vw);
+      line-height: calc(19 / #{$vw-desktop} * 100vw);
+      margin-top: calc(7 / #{$vw-desktop} * 100vw);
     }
 
     &__privacy {
-      font-size: calc(12/#{$vw-desktop} * 100vw);
-      line-height: calc(24/#{$vw-desktop} * 100vw);
-      margin: calc(30/#{$vw-desktop} * 100vw) 0 0 calc(-1/#{$vw-desktop} * 100vw);
+      font-size: calc(12 / #{$vw-desktop} * 100vw);
+      line-height: calc(24 / #{$vw-desktop} * 100vw);
+      margin: calc(30 / #{$vw-desktop} * 100vw) 0 0 calc(-1 / #{$vw-desktop} * 100vw);
     }
   }
 }
@@ -288,7 +289,7 @@
     &__privacy {
       font-size: 12px;
       line-height: 24px;
-      margin: 30px 0 0 -1px;
+      margin: 13px 0 0 -30px;
     }
 
     &__social-list {
@@ -303,10 +304,6 @@
     &__social-link {
       width: 29.71px;
       height: 29.71px;
-    }
-
-    &__privacy {
-      margin: 13px 0 0 -30px;
     }
   }
 }
@@ -350,6 +347,5 @@
     &__privacy {
       margin: 13px 0 0 -2px;
     }
-
   }
 }

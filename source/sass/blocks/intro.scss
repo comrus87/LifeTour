@@ -63,6 +63,7 @@
 
   &__social-list {
     display: flex;
+
     @include list-default;
     align-items: center;
     justify-content: flex-end;
@@ -97,46 +98,46 @@
 
 @media (max-width: $desktop-width) {
   .intro {
-    margin-top: calc(-112/#{$vw-desktop} * 100vw);
+    margin-top: calc(-112 / #{$vw-desktop} * 100vw);
 
     &__wrap {
-      padding-top: calc(259/#{$vw-desktop} * 100vw);
-      padding-bottom: calc(127/#{$vw-desktop} * 100vw);
+      padding-top: calc(259 / #{$vw-desktop} * 100vw);
+      padding-bottom: calc(127 / #{$vw-desktop} * 100vw);
     }
 
     &__decoration-text {
-      font-size: calc(93/#{$vw-desktop} * 100vw);
-      line-height: calc(93/#{$vw-desktop} * 100vw);
+      font-size: calc(93 / #{$vw-desktop} * 100vw);
+      line-height: calc(93 / #{$vw-desktop} * 100vw);
     }
 
     &__title {
-      font-size: calc(45/#{$vw-desktop} * 100vw);
-      line-height: calc(45/#{$vw-desktop} * 100vw);
-      margin: calc(-52/#{$vw-desktop} * 100vw) 0 0 0;
+      font-size: calc(45 / #{$vw-desktop} * 100vw);
+      line-height: calc(45 / #{$vw-desktop} * 100vw);
+      margin: calc(-52 / #{$vw-desktop} * 100vw) 0 0;
     }
 
     &__description {
-      font-size: calc(19/#{$vw-desktop} * 100vw);
-      line-height: calc(28/#{$vw-desktop} * 100vw);
-      margin: calc(14/#{$vw-desktop} * 100vw) 0 0 calc(2/1440 * 100vw);
-      width: calc(468/#{$vw-desktop} * 100vw);
+      font-size: calc(19 / #{$vw-desktop} * 100vw);
+      line-height: calc(28 / #{$vw-desktop} * 100vw);
+      margin: calc(14 / #{$vw-desktop} * 100vw) 0 0 calc(2 / #{$vw-desktop} * 100vw);
+      width: calc(468 / #{$vw-desktop} * 100vw);
     }
 
     &__link {
-      width: calc(246/#{$vw-desktop} * 100vw);
-      font-size: calc(16/#{$vw-desktop} * 100vw);
-      line-height: calc(25/#{$vw-desktop} * 100vw);
-      padding: calc(16/#{$vw-desktop} * 100vw) 0 calc(17/1440 * 100vw);
-      margin-top: calc(40/#{$vw-desktop} * 100vw);
+      width: calc(246 / #{$vw-desktop} * 100vw);
+      font-size: calc(16 / #{$vw-desktop} * 100vw);
+      line-height: calc(25 / #{$vw-desktop} * 100vw);
+      padding: calc(16 / #{$vw-desktop} * 100vw) 0 calc(17 / #{$vw-desktop} * 100vw);
+      margin-top: calc(40 / #{$vw-desktop} * 100vw);
     }
 
     &__social-list {
-      margin-top: calc(114/#{$vw-desktop} * 100vw);
-      margin-right: calc(4/#{$vw-desktop} * 100vw);
+      margin-top: calc(114 / #{$vw-desktop} * 100vw);
+      margin-right: calc(4 / #{$vw-desktop} * 100vw);
     }
 
     &__social-list li {
-      margin-right: calc(17.04/#{$vw-desktop} * 100vw);
+      margin-right: calc(17.04 / #{$vw-desktop} * 100vw);
     }
   }
 }
