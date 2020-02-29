@@ -27,6 +27,31 @@ document.addEventListener('DOMContentLoaded', function () {
   var form = document.querySelector('.question-form form');
   var phone = document.getElementById('form-phone');
 
+
+  function swipeSLide(slides, nextSwipe, prevSwipe) {
+    var touchStartX = 0;
+    var touchEndX = 0;
+
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].addEventListener('touchstart', function (evt) {
+        touchStartX = evt.changedTouches[0].screenX;
+      });
+
+      slides[i].addEventListener('touchend', function (evt) {
+        touchEndX = evt.changedTouches[0].screenX;
+        if (touchEndX < touchStartX) {
+          nextSwipe();
+        } else {
+          if (touchEndX > touchStartX) {
+            prevSwipe();
+          }
+        }
+      });
+    }
+  }
+
+  // Слайдер туры
+
   function switchSlider(step, slides, prev, next) {
     var startIndex = 0;
     var endIndex = step;
@@ -49,17 +74,22 @@ document.addEventListener('DOMContentLoaded', function () {
       showSlide(startIndex += n, endIndex += n);
     }
 
-    next.addEventListener('click', function () {
+    function onNextSwitchSlide() {
       if (endIndex < slides.length) {
         plusSlide(step);
       }
-    });
+    }
 
-    prev.addEventListener('click', function () {
+    function onPrevSwitchSlide() {
       if (startIndex >= step) {
         plusSlide(-step);
       }
-    });
+    }
+
+    next.addEventListener('click', onNextSwitchSlide);
+    prev.addEventListener('click', onPrevSwitchSlide);
+
+    swipeSLide(slides, onNextSwitchSlide, onPrevSwitchSlide);
   }
 
   function switchTabletSlider(slider, slides, prev, next) {
@@ -67,21 +97,25 @@ document.addEventListener('DOMContentLoaded', function () {
     var marginRight = getComputedStyle(slides[0]).marginRight;
     var step = slides[0].offsetWidth + parseInt(marginRight, 10);
 
-    next.addEventListener('click', function () {
+    function onNextSwitchSlide() {
       if ((slides.length - 1) * (-step) < acc) {
         acc -= step;
         slider.style.transform = 'translateX(' + acc + 'px)';
       }
-    });
+    }
 
-    prev.addEventListener('click', function () {
+    function onPrevSwitchSlide() {
       if (acc < 0) {
         acc += step;
         slider.style.transform = 'translateX(' + acc + 'px)';
       }
-    });
-  }
+    }
 
+    next.addEventListener('click', onNextSwitchSlide);
+    prev.addEventListener('click', onPrevSwitchSlide);
+
+    swipeSLide(slides, onNextSwitchSlide, onPrevSwitchSlide);
+  }
 
   function changeToursSlider() {
     if (window.matchMedia('(min-width: 1024px)').matches) {
@@ -135,21 +169,26 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
 
-    next.addEventListener('click', function () {
+    function onNextSwitchSlide() {
       if (((slides.length - sub) / count) * (-step) < acc) {
         acc -= step;
         indexSlide += count;
         switchStyle();
       }
-    });
+    }
 
-    prev.addEventListener('click', function () {
+    function onPrevSwitchSlide() {
       if (acc < 0) {
         acc += step;
         indexSlide -= count;
         switchStyle();
       }
-    });
+    }
+
+    next.addEventListener('click', onNextSwitchSlide);
+    prev.addEventListener('click', onPrevSwitchSlide);
+
+    swipeSLide(slides, onNextSwitchSlide, onPrevSwitchSlide);
   }
 
   if (instructorsSlidesList) {
@@ -201,23 +240,28 @@ document.addEventListener('DOMContentLoaded', function () {
     var step = 0;
     var currentSlide = 1;
 
-    next.addEventListener('click', function () {
+    function onNextSwitchSlide() {
       if (currentSlide < slides.length - 1) {
         currentSlide++;
         var marginRight = getComputedStyle(slides[currentSlide]).marginRight;
         step -= slides[currentSlide].offsetWidth + parseInt(marginRight, 10);
         slider.style.transform = 'translateX(' + step + 'px)';
       }
-    });
+    }
 
-    prev.addEventListener('click', function () {
+    function onPrevSwitchSlide() {
       if (currentSlide > 1) {
         var marginRight = getComputedStyle(slides[currentSlide]).marginRight;
         step += slides[currentSlide].offsetWidth + parseInt(marginRight, 10);
         slider.style.transform = 'translateX(' + step + 'px)';
         currentSlide--;
       }
-    });
+    }
+
+    next.addEventListener('click', onNextSwitchSlide);
+    prev.addEventListener('click', onPrevSwitchSlide);
+
+    swipeSLide(slides, onNextSwitchSlide, onPrevSwitchSlide);
   }
 
 
