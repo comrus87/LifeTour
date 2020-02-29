@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var form = document.querySelector('.question-form form');
   var phone = document.getElementById('form-phone');
 
-
   function swipeSLide(slides, nextSwipe, prevSwipe) {
     var touchStartX = 0;
     var touchEndX = 0;
@@ -39,10 +38,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       slides[i].addEventListener('touchend', function (evt) {
         touchEndX = evt.changedTouches[0].screenX;
-        if (touchEndX < touchStartX) {
+        if (touchStartX - touchEndX > 50) {
           nextSwipe();
         } else {
-          if (touchEndX > touchStartX) {
+          if (touchEndX - touchStartX > 50) {
             prevSwipe();
           }
         }
